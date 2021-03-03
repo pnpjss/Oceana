@@ -43,7 +43,6 @@ body {
 }
 .grid-container .grid-item {
   display: flex;
-  border: 1px solid black;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -56,7 +55,8 @@ body {
   width: 100vw;
 }
 .grid-container .item2 {
-  height: 25rem;
+  position: relative;
+  height: 35rem;
   width: 100vw;
   padding: 0;
   margin: 0;
@@ -68,8 +68,53 @@ body {
 .grid-container .item2 svg {
   object-fit: cover;
 }
-.grid-container .item3 {
-  height: auto;
+.grid-container .page-2-content-container {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  height: 32rem;
+  width: calc(100vw - 2rem);
+  background-color: #e3f5ff;
+  border: none;
+  flex-direction: column;
+}
+.grid-container .page-2-content-container svg {
+  margin-top: 1rem;
+}
+.grid-container .page-2-content-container h2 {
+  color: #004b66;
+  width: 20rem;
+  text-align: center;
+  font-weight: bold;
+  font-size: 36px;
+}
+.grid-container .page-2-content-container h4 {
+  margin: -0.5rem 0rem 0rem 1rem;
+  font-weight: bold;
+  width: 20rem;
+  font-size: 18px;
+  color: #fe5c6f;
+}
+.grid-container .page-2-content-container p {
+  margin-left: 1rem;
+  line-height: 133.8%;
+  margin-top: 0rem;
+  width: 20rem;
+  font-size: 18px;
+  color: #004b66;
+}
+.grid-container .page-2-content-container button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2rem;
+  width: 10rem;
+  height: 3rem;
+  background-color: #004b66;
+  color: white;
+  font-size: 16px;
+  margin-top: 2rem;
+  border: none;
 }
 .grid-container .item4 {
   height: auto;
