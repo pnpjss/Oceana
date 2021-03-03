@@ -3,7 +3,8 @@
   "scripts": {
     "build": "parcel build index.html",
     "dev": "parcel index.html",
-    "start": "node app.js"
+    "start": "node app.js",
+    "ember-progress-bar": "0.0.8-beta"
   },
   "devDependencies": {
     "@parcel/optimizer-cssnano": "^2.0.0-nightly.612",
@@ -22,5 +23,8 @@
   },
   "prettier": {
     "singleQuote": true
+  },
+  "dependencies": {
+    "ember-progress-bar": "0.0.8-beta"
   }
 }
