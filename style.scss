@@ -1,0 +1,168 @@
+@import 'variables';
+@font-face {
+  font-family: 'Brown';
+  src: url('/fonts/Brown-Regular.woff');
+  src: url('/fonts/Brown-Regular.woff2');
+}
+* {
+  box-sizing: border-box;
+  font-family: 'Brown', 'Helvetica';
+}
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+  margin: 0;
+}
+
+.oceana-welcome-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  height: 100vh;
+  width: 100%;
+
+  svg {
+    width: 85%;
+    margin-bottom: 12rem;
+  }
+  h2 {
+    color: $mainblue;
+    margin-bottom: -1.4rem;
+  }
+}
+
+.grid-container {
+  display: grid;
+  justify-content: center;
+  grid-template-rows: repeat(4 auto);
+  height: 100vh;
+  width: 100%;
+
+  .grid-item {
+    display: flex;
+    border: $b;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 0rem 1rem;
+  }
+  .item1 {
+    justify-content: space-between;
+    height: 4rem;
+    width: 100vw;
+  }
+  .item2 {
+    height: 25rem;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background-image: url('/images/wave_s2.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    svg {
+      object-fit: cover;
+    }
+  }
+  .item3 {
+    height: auto;
+  }
+  .item4 {
+    height: auto;
+  }
+}
+
+// * {
+//   box-sizing: border-box;
+//   margin: 10rem;
+//   padding: 0;
+// }
+// body {
+//   display: flex;
+//   justify-content: center;
+//   flex-direction: column;
+//   height: auto;
+//   width: 100vw;
+// }
+// .container-section1 {
+//   display: flex;
+//   flex-direction: column;
+//   height: 100vh;
+//   justify-content: center;
+//   align-items: center;
+
+//   width: 100%;
+//   border: 1px solid black;
+// }
+
+// .container-section1 svg {
+//   height: 70%;
+//   width: 70%;
+// }
+// .grid-container-section2 {
+//   display: grid;
+//   height: 100vh;
+//   width: 100%;
+//   border: 1px solid black;
+//   justify-content: center;
+// }
+// .grid-container-section2 .grid-item1 {
+//   display: flex;
+//   justify-content: space-between;
+//   height: 3rem;
+
+//   margin: 1rem;
+// }
+// .calendar-svg {
+// }
+
+// .liseberg-logo-svg {
+//   margin-left: 25%;
+// }
+
+// .search-svg {
+// }
+
+// .cart-svg {
+// }
+// .grid-container-section2 .grid-item2 {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+// .grid-container-section2 .wave {
+//   position: relative;
+//   height: 100%;
+//   width: 100%;
+//   z-index: -1;
+// }
+// .grid-container-section2 .grid-item3 {
+//   display: flex;
+//   justify-content: center;
+//   position: absolute;
+//   height: 100%;
+//   width: 100%;
+//   border: 1rem solid white;
+// }
+// .grid-item3-bg {
+//   align-self: center;
+//   margin-top: 8rem;
+//   position: absolute;
+//   height: 70%;
+//   width: 85%;
+//   border: 1px solid black;
+//   display: grid;
+// }
+// .ses-snart {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   height: 20%;
+// }
