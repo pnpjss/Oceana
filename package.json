@@ -2,10 +2,21 @@
   "private": true,
   "scripts": {
     "build": "parcel build index.html",
-    "dev": "parcel index.html"
+    "dev": "parcel index.html",
+    "start": "node app.js"
   },
   "devDependencies": {
+    "@parcel/optimizer-cssnano": "^2.0.0-nightly.612",
+    "@parcel/optimizer-htmlnano": "^2.0.0-nightly.612",
+    "@parcel/packager-css": "^2.0.0-nightly.612",
+    "@parcel/packager-html": "^2.0.0-nightly.612",
+    "@parcel/transformer-css": "^2.0.0-nightly.612",
+    "@parcel/transformer-html": "^2.0.0-nightly.612",
+    "@parcel/transformer-postcss": "^2.0.0-nightly.612",
+    "@parcel/transformer-posthtml": "^2.0.0-nightly.612",
+    "@parcel/transformer-sass": "^2.0.0-nightly.612",
     "parcel": "^2.0.0-beta.1",
+    "postcss": "^8.2.6",
     "prettier": "^2.2.1",
     "sass": "^1.32.8"
   },
