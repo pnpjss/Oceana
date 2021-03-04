@@ -36,19 +36,17 @@ body {
   }
 }
 
-.grid-container {
+.grid-container-section1 {
   display: grid;
   justify-content: center;
   grid-template-rows: repeat(4 auto);
   height: 100vh;
   width: 100%;
 
-  .grid-item {
+  .grid-section1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: auto;
     padding: 0rem 1rem;
   }
   .item1 {
@@ -56,10 +54,14 @@ body {
     height: 4rem;
     width: 100vw;
   }
+  .liseberg-logo-svg {
+    margin-left: 25%;
+  }
+
   .item2 {
     position: relative;
     height: 35rem;
-    width: 100vw;
+
     padding: 0;
     margin: 0;
     border: none;
@@ -76,8 +78,8 @@ body {
     align-items: center;
     position: absolute;
     height: 32rem;
-    width: calc(100vw - 2rem);
-    background-color: #e3f5ff;
+    width: calc(100vw - 4rem);
+    background-color: $bgthinblue;
     border: none;
     flex-direction: column;
 
@@ -126,97 +128,95 @@ body {
     height: auto;
   }
 }
+.grid-container-section2 {
+  width: 100vw;
+  color: $mainblue;
+  @extend .grid-container-section1;
 
-// .button {
-//   &:visited { }
-//   &:hover { }
-//   &:active { }
-// }
+  .grid-section2 {
+    @extend .grid-section1;
+    width: 100vw;
+    grid-template-rows: 2;
+  }
+  .s2-item1 {
+    justify-content: space-between;
+    margin-top: -1.5rem;
+    padding: 0rem 2rem 0rem 2rem;
+    height: 20vh;
+    width: 100%;
+  }
+  .s2-item2 {
+    justify-content: space-between;
+    flex-direction: column;
+    height: 80vh;
+  }
+  h2 {
+    font-size: 36px;
+    text-align: center;
+  }
+  p {
+    margin-top: -2.5rem;
+    width: 90%;
+    line-height: 21.06px;
+  }
+  button {
+    background-color: white;
+    border: 0.2rem solid $mainblue;
+    color: $mainblue;
+    border-radius: 3rem;
+    height: 3.4rem;
+    width: 8rem;
+    margin-bottom: 4rem;
+    font-size: 18px;
+  }
+}
+.grid-container-section3 {
+  @extend .grid-container-section2;
+  height: 100vh;
 
-// * {
-//   box-sizing: border-box;
-//   margin: 10rem;
-//   padding: 0;
-// }
-// body {
-//   display: flex;
-//   justify-content: center;
-//   flex-direction: column;
-//   height: auto;
-//   width: 100vw;
-// }
-// .container-section1 {
-//   display: flex;
-//   flex-direction: column;
-//   height: 100vh;
-//   justify-content: center;
-//   align-items: center;
+  .grid-section3 {
+    @extend .grid-section2;
+    height: 50vh;
+  }
+  .s3-item1 {
+    display: flex;
+    justify-content: initial;
+    flex-direction: column;
+    border: 2rem solid $lightblue;
+    background-color: $bgthinblue;
 
-//   width: 100%;
-//   border: 1px solid black;
-// }
+    h2 {
+      color: $pink;
+      font-size: 44px;
+      padding: 0.5rem 0rem 2rem;
+    }
+    b {
+      color: $pink;
+    }
+  }
+  .s3-item2 {
+    flex-direction: column;
+    background-color: $mainblue;
+    color: white;
+    justify-content: space-between;
 
-// .container-section1 svg {
-//   height: 70%;
-//   width: 70%;
-// }
-// .grid-container-section2 {
-//   display: grid;
-//   height: 100vh;
-//   width: 100%;
-//   border: 1px solid black;
-//   justify-content: center;
-// }
-// .grid-container-section2 .grid-item1 {
-//   display: flex;
-//   justify-content: space-between;
-//   height: 3rem;
+    h2 {
+    }
+    p {
+    }
+    .input-email {
+      height: 3rem;
+      width: 95%;
+      border: none;
+      box-shadow: 2px 5px 20px -4px rgba(0, 0, 0, 0.62);
+      -webkit-box-shadow: 2px 5px 20px -4px rgba(0, 0, 0, 0.62);
+      -moz-box-shadow: 2px 5px 20px -4px rgba(0, 0, 0, 0.62);
+    }
 
-//   margin: 1rem;
-// }
-// .calendar-svg {
-// }
-
-// .liseberg-logo-svg {
-//   margin-left: 25%;
-// }
-
-// .search-svg {
-// }
-
-// .cart-svg {
-// }
-// .grid-container-section2 .grid-item2 {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-// }
-// .grid-container-section2 .wave {
-//   position: relative;
-//   height: 100%;
-//   width: 100%;
-//   z-index: -1;
-// }
-// .grid-container-section2 .grid-item3 {
-//   display: flex;
-//   justify-content: center;
-//   position: absolute;
-//   height: 100%;
-//   width: 100%;
-//   border: 1rem solid white;
-// }
-// .grid-item3-bg {
-//   align-self: center;
-//   margin-top: 8rem;
-//   position: absolute;
-//   height: 70%;
-//   width: 85%;
-//   border: 1px solid black;
-//   display: grid;
-// }
-// .ses-snart {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   height: 20%;
-// }
+    button {
+      width: 10rem;
+      margin-bottom: 1rem;
+      margin-left: 50%;
+    }
+  }
+}
