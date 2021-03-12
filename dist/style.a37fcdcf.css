@@ -30,6 +30,11 @@ body {
   width: 85%;
   margin-bottom: 12rem;
 }
+@media screen and (max-width: 500px) {
+  .oceana-welcome-container svg {
+    width: 75%;
+  }
+}
 .oceana-welcome-container h2 {
   color: #004b66;
   margin-bottom: -1.4rem;

@@ -131,12 +131,12 @@
       this[globalName] = mainExports;
     }
   }
-})({"2db639e1894292d161ae8eb302df9cdc":[function(require,module,exports) {
+})({"7fd69a94d7fc04ca16c45c6815f196c3":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = 1234;
 var HMR_ENV_HASH = "d751713988987e9331980363e24189ce";
-module.bundle.HMR_BUNDLE_ID = "33e25dae8385e5f843f4c9402333f292";
+module.bundle.HMR_BUNDLE_ID = "d264f8d6ffb59c88148c26c84bda3ba0";
 /* global HMR_HOST, HMR_PORT, HMR_ENV_HASH */
 
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -407,54 +407,8 @@ function hmrAcceptRun(bundle, id) {
 
   acceptedAssets[id] = true;
 }
-},{}],"6f0844075ec0c6933f7ef0c127506af7":[function(require,module,exports) {
-const page3btns = document.querySelectorAll('.grid-container-section2 .grid-section2 button');
-console.log(page3btns);
-const btnsUnderscores = document.querySelectorAll('.grid-container-section2 .grid-section2 .hover-line');
-console.log(btnsUnderscores);
-page3btns.forEach(btn => {
-  btn.addEventListener('mouseover', () => {
-    btnsUnderscores.forEach(underscore => {
-      console.log(underscore);
-
-      if (underscore.id === btn.id) {
-        underscore.style.width = '6rem';
-      }
-    });
-  });
-  btn.addEventListener('mouseout', () => {
-    btnsUnderscores.forEach(underscore => {
-      console.log(underscore);
-
-      if (underscore.id === btn.id) {
-        underscore.style.width = '0rem';
-      }
-    });
-  });
-}); // const data = require('./invites.json');
-// console.log(data[1]['1Fornamn']);
-// const urlParams = new URLSearchParams(window.location.search);
-// console.log(urlParams.has('id')); // true
-// let userId = urlParams.get('id');
-// console.log(userId);
-// console.log(data[userId]['1Fornamn']);
-// const name = document.querySelector('.user-name');
-// console.log(name);
-// name.textContent =
-//   'Grattis ' + data[userId]['1Fornamn'] + ' ' + data[userId]['2Efternamn'];
-
-const data = require('./invites.json');
-
-function sortUser() {
-  const urlParams = new URLSearchParams(window.location.search);
-  let userId = urlParams.get('id');
-  const name = document.querySelector('.user-name');
-  name.textContent = 'Grattis ' + data[userId]['1Fornamn'] + ' ' + data[userId]['2Efternamn'];
-}
-
-sortUser();
-},{"./invites.json":"4b743e59f6da7136c12b92baa9645fed"}],"4b743e59f6da7136c12b92baa9645fed":[function(require,module,exports) {
+},{}],"4b743e59f6da7136c12b92baa9645fed":[function(require,module,exports) {
 module.exports = JSON.parse("[{\"1Fornamn\":\"Linn\",\"2Efternamn\":\"Ahlbom\",\"3Adress1\":\"Box 19086\",\"4Postnr\":\"400 12\",\"5Ort\":\"Göteborg\",\"6Lopnr\":1,\"7Hemsida\":\"https://oceana-git-master-pnpjss.vercel.app/\",\"#Uniklandningssida\":\"https://oceana-git-master-pnpjss.vercel.app/id=1\"},{\"1Fornamn\":\"Ellen\",\"2Efternamn\":\"Adalberth\",\"3Adress1\":\"Eldargatan 4B\",\"4Postnr\":\"413 15\",\"5Ort\":\"Göteborg\",\"6Lopnr\":2,\"7Hemsida\":\"https://oceana-git-master-pnpjss.vercel.app/\",\"#Uniklandningssida\":\"https://oceana-git-master-pnpjss.vercel.app/id=2\"},{\"1Fornamn\":\"Fanny\",\"2Efternamn\":\"Alvermalm\",\"3Adress1\":\"Kullegatan 3A\",\"4Postnr\":\"412 62\",\"5Ort\":\"Göteborg\",\"6Lopnr\":3,\"7Hemsida\":\"https://oceana-git-master-pnpjss.vercel.app/\",\"#Uniklandningssida\":\"https://oceana-git-master-pnpjss.vercel.app/id=3\"},{\"1Fornamn\":\"Sarah\",\"2Efternamn\":\"Malm\",\"3Adress1\":\"Karl Johansgatan 49D\",\"4Postnr\":\"414 55\",\"5Ort\":\"Göteborg\",\"6Lopnr\":4,\"7Hemsida\":\"https://oceana-git-master-pnpjss.vercel.app/\",\"#Uniklandningssida\":\"https://oceana-git-master-pnpjss.vercel.app/4\"},{\"1Fornamn\":\"Evelina\",\"2Efternamn\":\"Bakos\",\"3Adress1\":\"Lådspikaregatan 2\",\"4Postnr\":\"416 80\",\"5Ort\":\"Göteborg\",\"6Lopnr\":5,\"7Hemsida\":\"https://oceana-git-master-pnpjss.vercel.app/\",\"#Uniklandningssida\":\"https://oceana-git-master-pnpjss.vercel.app/5\"},{\"1Fornamn\":\"Josefin\",\"2Efternamn\":\"Bech\",\"3Adress1\":\"Vadlagsgatan 3\",\"4Postnr\":\"421 66\",\"5Ort\":\"Västra Frölunda\",\"6Lopnr\":6,\"7Hemsida\":\"https://oceana-git-master-pnpjss.vercel.app/\",\"#Uniklandningssida\":\"https://oceana-git-master-pnpjss.vercel.app/id=6\"},{\"1Fornamn\":\"Frida\",\"2Efternamn\":\"Borbély\",\"3Adress1\":\"Fanjunkaregatan 7F\",\"4Postnr\":\"41504\",\"5Ort\":\"Göteborg\",\"6Lopnr\":7,\"7Hemsida\":\"https://oceana-git-master-pnpjss.vercel.app/\",\"#Uniklandningssida\":\"https://oceana-git-master-pnpjss.vercel.app/id=7\"},{\"1Fornamn\":\"Lisa\",\"2Efternamn\":\"Schneiderman\",\"3Adress1\":\"Eklanda Skog 34\",\"4Postnr\":\"43149\",\"5Ort\":\"Mölndal\",\"6Lopnr\":8,\"7Hemsida\":\"https://oceana-git-master-pnpjss.vercel.app/\",\"#Uniklandningssida\":\"https://oceana-git-master-pnpjss.vercel.app/id=8\"},{\"1Fornamn\":\"Matilda\",\"2Efternamn\":\"Carlsdotter\",\"3Adress1\":\"Gustavsplatsen 1B\",\"4Postnr\":\"416 69\",\"5Ort\":\"Göteborg\",\"6Lopnr\":9,\"7Hemsida\":\"https://oceana-git-master-pnpjss.vercel.app/\",\"#Uniklandningssida\":\"https://oceana-git-master-pnpjss.vercel.app/id=9\"},{\"1Fornamn\":\"Teresa\",\"2Efternamn\":\"Eriksson\",\"3Adress1\":\"Hårsåsen Skogshöjden 1\",\"4Postnr\":\"50765\",\"5Ort\":\"Borås\",\"6Lopnr\":10,\"7Hemsida\":\"https://oceana-git-master-pnpjss.vercel.app/\",\"#Uniklandningssida\":\"https://oceana-git-master-pnpjss.vercel.app/id=10\"},{\"1Fornamn\":\"Adam\",\"2Efternamn\":\"Augustsson\",\"3Adress1\":\"Balladgatan 12\",\"4Postnr\":\"50471\",\"5Ort\":\"Borås\",\"6Lopnr\":11,\"7Hemsida\":\"https://oceana-git-master-pnpjss.vercel.app/\",\"#Uniklandningssida\":\"https://oceana-git-master-pnpjss.vercel.app/id=11\"},{\"1Fornamn\":\"Philip\",\"2Efternamn\":\"Holmsten\",\"3Adress1\":\"Solvarvsgatan 30\",\"4Postnr\":\"415 31\",\"5Ort\":\"Göteborg\",\"6Lopnr\":12,\"7Hemsida\":\"https://oceana-git-master-pnpjss.vercel.app/\",\"#Uniklandningssida\":\"https://oceana-git-master-pnpjss.vercel.app/id=12\"},{\"1Fornamn\":\"Lisa\",\"2Efternamn\":\"Löfström\",\"3Adress1\":\"Karl Johansgatan 15A\",\"4Postnr\":\"414 59\",\"5Ort\":\"Göteborg\",\"6Lopnr\":13,\"7Hemsida\":\"https://oceana-git-master-pnpjss.vercel.app/\",\"#Uniklandningssida\":\"https://oceana-git-master-pnpjss.vercel.app/id=13\"},{\"1Fornamn\":\"Johanna\",\"2Efternamn\":\"Hellquist\",\"3Adress1\":\"Streteredsvägen 1B\",\"4Postnr\":\"428 32\",\"5Ort\":\"Kållered\",\"6Lopnr\":14,\"7Hemsida\":\"https://oceana-git-master-pnpjss.vercel.app/\",\"#Uniklandningssida\":\"https://oceana-git-master-pnpjss.vercel.app/14\"},{\"1Fornamn\":\"Alda\",\"2Efternamn\":\"Cripljanin\",\"3Adress1\":\"Munkebäcksgatan 26 C\",\"4Postnr\":\"416 53\",\"5Ort\":\"Göteborg\",\"6Lopnr\":15,\"7Hemsida\":\"https://oceana-git-master-pnpjss.vercel.app/\",\"#Uniklandningssida\":\"https://oceana-git-master-pnpjss.vercel.app/15\"},{\"1Fornamn\":\"Josefin\",\"2Efternamn\":\"Eldh\",\"3Adress1\":\"Skiftesgatan 2C\",\"4Postnr\":\"417 39\",\"5Ort\":\"Göteborg\",\"6Lopnr\":16,\"7Hemsida\":\"https://oceana-git-master-pnpjss.vercel.app/\",\"#Uniklandningssida\":\"https://oceana-git-master-pnpjss.vercel.app/16\"},{\"1Fornamn\":\"Ava\",\"2Efternamn\":\"Nikpay\",\"3Adress1\":\"Norra Ågatan 5F\",\"4Postnr\":\"416 49\",\"5Ort\":\"Göteborg \",\"6Lopnr\":17,\"7Hemsida\":\"https://oceana-git-master-pnpjss.vercel.app/\",\"#Uniklandningssida\":\"https://oceana-git-master-pnpjss.vercel.app/17\"},{\"1Fornamn\":\"Cornelia\",\"2Efternamn\":\"Nordlund\",\"3Adress1\":\"Schéelegatan 4A\",\"4Postnr\":\"416 60\",\"5Ort\":\"Göteborg\",\"6Lopnr\":18,\"7Hemsida\":\"https://oceana-git-master-pnpjss.vercel.app/\",\"#Uniklandningssida\":\"https://oceana-git-master-pnpjss.vercel.app/18\"},{\"1Fornamn\":\"Edvin\",\"2Efternamn\":\"Oldin\",\"3Adress1\":\"Sägengatan 66\",\"4Postnr\":\"42258\",\"5Ort\":\"Hisings Backa\",\"6Lopnr\":19,\"7Hemsida\":\"https://oceana-git-master-pnpjss.vercel.app/\",\"#Uniklandningssida\":\"https://oceana-git-master-pnpjss.vercel.app/19\"},{\"1Fornamn\":\"Lisa\",\"2Efternamn\":\"Persson\",\"3Adress1\":\"Smörbollsgatan 1A\",\"4Postnr\":\"41718\",\"5Ort\":\"Göteborg\",\"6Lopnr\":20,\"7Hemsida\":\"https://oceana-git-master-pnpjss.vercel.app/\",\"#Uniklandningssida\":\"https://oceana-git-master-pnpjss.vercel.app/20\"},{\"1Fornamn\":\"Hanna\",\"2Efternamn\":\"Pålsson\",\"3Adress1\":\"Zachrissonsgatan 7E\",\"4Postnr\":\"416 74\",\"5Ort\":\"Göteborg\",\"6Lopnr\":21,\"7Hemsida\":\"https://oceana-git-master-pnpjss.vercel.app/\",\"#Uniklandningssida\":\"https://oceana-git-master-pnpjss.vercel.app/21\"},{\"1Fornamn\":\"Tova\",\"2Efternamn\":\"Rane\",\"3Adress1\":\"Annebergsvägen 53\",\"4Postnr\":\"437 93\",\"5Ort\":\"Lindome\",\"6Lopnr\":22,\"7Hemsida\":\"https://oceana-git-master-pnpjss.vercel.app/\",\"#Uniklandningssida\":\"https://oceana-git-master-pnpjss.vercel.app/id=22\"},{\"1Fornamn\":\"Anton\",\"2Efternamn\":\"Schmidt\",\"3Adress1\":\"Ponnybacken 1\",\"4Postnr\":\"425 42\",\"5Ort\":\"Göteborg\",\"6Lopnr\":23,\"7Hemsida\":\"https://oceana-git-master-pnpjss.vercel.app/\",\"#Uniklandningssida\":\"https://oceana-git-master-pnpjss.vercel.app/id=23\"},{\"1Fornamn\":\"Julia\",\"2Efternamn\":\"Sikström\",\"3Adress1\":\"Väderlekstorget 2\",\"4Postnr\":\"41832\",\"5Ort\":\"Göteborg\",\"6Lopnr\":24,\"7Hemsida\":\"https://oceana-git-master-pnpjss.vercel.app/\",\"#Uniklandningssida\":\"https://oceana-git-master-pnpjss.vercel.app/id=24\"},{\"1Fornamn\":\"Annie\",\"2Efternamn\":\"Simlund\",\"3Adress1\":\"Asperögatan 3B\",\"4Postnr\":\"414 74\",\"5Ort\":\"Göteborg\",\"6Lopnr\":25,\"7Hemsida\":\"https://oceana-git-master-pnpjss.vercel.app/\",\"#Uniklandningssida\":\"https://oceana-git-master-pnpjss.vercel.app/id=25\"},{\"1Fornamn\":\"Dara\",\"2Efternamn\":\"Torabpour\",\"3Adress1\":\"Folkungagatan 6B\",\"4Postnr\":\"411 02\",\"5Ort\":\"Göteborg\",\"6Lopnr\":26,\"7Hemsida\":\"https://oceana-git-master-pnpjss.vercel.app/\",\"#Uniklandningssida\":\"https://oceana-git-master-pnpjss.vercel.app/id=26\"},{\"1Fornamn\":\"Rebecca\",\"2Efternamn\":\"Wahl\",\"3Adress1\":\"Sparvgatan 3D\",\"4Postnr\":\"41 667\",\"5Ort\":\"Göteborg\",\"6Lopnr\":27,\"7Hemsida\":\"https://oceana-git-master-pnpjss.vercel.app/\",\"#Uniklandningssida\":\"https://oceana-git-master-pnpjss.vercel.app/id=27\"}]");
-},{}]},{},["2db639e1894292d161ae8eb302df9cdc","6f0844075ec0c6933f7ef0c127506af7"], null)
+},{}]},{},["7fd69a94d7fc04ca16c45c6815f196c3","4b743e59f6da7136c12b92baa9645fed"], null)
 
-//# sourceMappingURL=app.33e25dae.js.map
+//# sourceMappingURL=invites.d264f8d6.js.map

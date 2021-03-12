@@ -25,14 +25,28 @@ page3btns.forEach((btn) => {
   });
 });
 
-// let header = $('header');
-// let height = $(window).height();
-// window.addEventListener('scroll', () => {
-//   const currentScroll = window.pageYOffset;
-//   if (currentScroll >= height) {
-//     console.log('youve scrolled on');
-//     header.addClass('header-fixed');
-//   } else {
-//     header.removeClass('header-fixed');
-//   }
-// });
+// const data = require('./invites.json');
+// console.log(data[1]['1Fornamn']);
+// const urlParams = new URLSearchParams(window.location.search);
+// console.log(urlParams.has('id')); // true
+// let userId = urlParams.get('id');
+// console.log(userId);
+
+// console.log(data[userId]['1Fornamn']);
+
+// const name = document.querySelector('.user-name');
+// console.log(name);
+
+// name.textContent =
+//   'Grattis ' + data[userId]['1Fornamn'] + ' ' + data[userId]['2Efternamn'];
+
+const data = require('./invites.json');
+function sortUser() {
+  const urlParams = new URLSearchParams(window.location.search);
+  let userId = urlParams.get('id');
+  const name = document.querySelector('.user-name');
+  name.textContent =
+    'Grattis ' + data[userId]['1Fornamn'] + ' ' + data[userId]['2Efternamn'];
+}
+
+sortUser();

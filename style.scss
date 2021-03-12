@@ -29,8 +29,13 @@ body {
 
   svg {
     width: 85%;
-    height: 85%;
+
     margin-bottom: 12rem;
+  }
+  @media screen and (max-width: 500px) {
+    svg {
+      width: 75%;
+    }
   }
   h2 {
     color: $mainblue;
