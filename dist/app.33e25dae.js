@@ -448,6 +448,7 @@ const data = require('./invites.json');
 function sortUser() {
   const urlParams = new URLSearchParams(window.location.search);
   let userId = urlParams.get('id');
+  userId--;
   const name = document.querySelector('.user-name');
   name.textContent = 'Grattis ' + data[userId]['1Fornamn'] + ' ' + data[userId]['2Efternamn'];
 }
