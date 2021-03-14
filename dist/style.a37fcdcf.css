@@ -50,7 +50,7 @@ header {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 2;
   background-color: white;
 }
 header div {
@@ -83,9 +83,12 @@ header button {
   display: grid;
   justify-content: center;
   grid-template-rows: 90vh;
-  height: 100vh;
+  height: 92vh;
   width: 100vw;
   overflow: hidden;
+  background-image: url("wave_s2.4566900c.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .grid-container-section1 .grid-section1, .grid-container-section2 .grid-section1, .grid-container-section3 .grid-section1, .grid-container-section2 .grid-section2, .grid-container-section3 .grid-section2, .grid-container-section3 .grid-section3 {
   display: flex;
@@ -101,6 +104,18 @@ header button {
 .grid-container-section1 .liseberg-logo-svg, .grid-container-section2 .liseberg-logo-svg, .grid-container-section3 .liseberg-logo-svg {
   margin-left: 25%;
 }
+.grid-container-section1 .confirm-form, .grid-container-section2 .confirm-form, .grid-container-section3 .confirm-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 500ms ease-in-out;
+  opacity: 0;
+  height: 10vh;
+  width: 100vw;
+  background-color: #292929;
+  z-index: 2;
+}
 .grid-container-section1 .item2, .grid-container-section2 .item2, .grid-container-section3 .item2 {
   position: relative;
   height: auto;
@@ -108,9 +123,6 @@ header button {
   padding: 0;
   margin: 0;
   border: none;
-  background-image: url("wave_s2.4566900c.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 .grid-container-section1 .page-2-content-container, .grid-container-section2 .page-2-content-container, .grid-container-section3 .page-2-content-container {
   display: flex;
@@ -121,6 +133,7 @@ header button {
   background-color: #e3f5ff;
   border: none;
   flex-direction: column;
+  margin: 0;
 }
 .grid-container-section1 .page-2-content-container svg, .grid-container-section2 .page-2-content-container svg, .grid-container-section3 .page-2-content-container svg {
   margin-top: 2rem;
@@ -239,6 +252,7 @@ header button {
   justify-self: center;
   width: 100%;
   color: #004b66;
+  background-image: none;
   grid-template-rows: 20vh 80vh;
   grid-template-columns: 1fr 1fr 1fr;
   flex-direction: column;
@@ -327,21 +341,22 @@ header button {
 }
 
 .grid-container-section3 {
-  height: 100vh;
+  background-image: none;
+  height: 92vh;
   width: 100vw;
   grid-template-rows: 50% 50%;
   grid-template-columns: 100%;
 }
 .grid-container-section3 .grid-section3 {
   display: none;
-  height: 50vh;
+  height: 100%;
   width: 100vw;
 }
 .grid-container-section3 .s3-item1 {
   display: flex;
   justify-content: initial;
   flex-direction: column;
-  border: 2rem solid #96c0d6;
+  border: 1.5rem solid #96c0d6;
   background-color: #e3f5ff;
   width: 100vw;
 }

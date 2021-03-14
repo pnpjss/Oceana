@@ -53,7 +53,7 @@ header {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 2;
   background-color: white;
   div {
     display: flex;
@@ -86,9 +86,12 @@ header {
   display: grid;
   justify-content: center;
   grid-template-rows: 90vh;
-  height: 100vh;
+  height: 92vh;
   width: 100vw;
   overflow: hidden;
+  background-image: url('/images/wave_s2.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
 
   .grid-section1 {
     display: flex;
@@ -104,7 +107,18 @@ header {
   .liseberg-logo-svg {
     margin-left: 25%;
   }
-
+  .confirm-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 500ms ease-in-out;
+    opacity: 0;
+    height: 10vh;
+    width: 100vw;
+    background-color: rgb(41, 41, 41);
+    z-index: 2;
+  }
   .item2 {
     position: relative;
     height: auto;
@@ -112,9 +126,6 @@ header {
     padding: 0;
     margin: 0;
     border: none;
-    background-image: url('/images/wave_s2.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
   }
   .page-2-content-container {
     display: flex;
@@ -125,6 +136,7 @@ header {
     background-color: $bgthinblue;
     border: none;
     flex-direction: column;
+    margin: 0;
 
     svg {
       margin-top: 2rem;
@@ -228,6 +240,7 @@ header {
   color: $mainblue;
   @extend .grid-container-section1;
 
+  background-image: none;
   grid-template-rows: 20vh 80vh;
   grid-template-columns: 1fr 1fr 1fr;
   flex-direction: column;
@@ -322,7 +335,8 @@ header {
 }
 .grid-container-section3 {
   @extend .grid-container-section2;
-  height: 100vh;
+  background-image: none;
+  height: 92vh;
   width: 100vw;
   grid-template-rows: 50% 50%;
   grid-template-columns: 100%;
@@ -330,14 +344,15 @@ header {
   .grid-section3 {
     @extend .grid-section2;
     display: none;
-    height: 50vh;
+    height: 100%;
     width: 100vw;
   }
   .s3-item1 {
     display: flex;
     justify-content: initial;
     flex-direction: column;
-    border: 2rem solid $lightblue;
+
+    border: 1.5rem solid $lightblue;
     background-color: $bgthinblue;
     width: 100vw;
     h2 {
