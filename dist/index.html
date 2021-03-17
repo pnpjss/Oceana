@@ -5,12 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ff8bdfe9.ico">
-    <link rel="stylesheet" href="/style.a37fcdcf.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.6a47e69c.ico">
+    <link rel="preload" href="/style.beb02c0a.css" as="style">
+    <link rel="preload" href="/index.1397955d.js" as="script">
     <title>Oceana</title>
   </head>
   <body>
     <section class="oceana-welcome-container">
+      <!-- <object
+        data="/images/exit_btn.svg"
+        type="image/svg+xml"
+        id="test"
+      ></object> -->
+
       <svg width="814" height="172" viewbox="0 0 814 172" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M390.588 22.42C391.792 19.1579 393.417 12.2052 388.956 0.995049C379.537 4.51203 369.767 7.00141 359.815 8.42003C330.325 12.612 305.798 6.33493 290.897 0.995049V170.847H388.956V142.36H320.764V105.09H375.948V76.1893H320.916H320.735V39.5439C356.122 48.2911 384.422 39.0935 390.588 22.42Z" fill="#004B66"></path>
         <path d="M488.98 0.995049H442.414L400.606 170.854H437.183C437.495 166.27 437.952 161.409 438.634 156.389C439.258 151.543 439.998 146.945 440.81 142.585C443.93 143.704 464.815 150.802 481.493 138.953C485.288 136.24 488.535 132.83 491.062 128.905C498.019 153.403 502.763 170.193 502.821 170.542C502.825 170.596 502.84 170.65 502.865 170.698C502.89 170.747 502.924 170.79 502.966 170.825C503.039 170.861 503.118 170.88 503.199 170.88C503.279 170.88 503.359 170.861 503.431 170.825H533.841L488.98 0.995049ZM462.291 117.47C459.576 117.638 456.851 117.552 454.151 117.216C452.021 116.922 449.917 116.456 447.862 115.821L466.926 37.4225C473.18 60.7436 479.431 84.0647 485.679 107.386C476.568 114.063 467.761 117.07 462.291 117.47Z" fill="#004B66"></path>
@@ -59,6 +66,29 @@
     </header>
     <section class="grid-container-section1">
       <div class="grid-section1 item2">
+        <div class="form-bg">
+          <button class="exit-btn">X</button>
+          <h2>Ja, jag vill komma på Oceanas premiärbad</h2>
+          <p>
+            Anmälan till Oceanas invigningsbad 24 april, 10:00 är personlig och
+            bindande. Läst Lisebergs fullständiga villkor för avbokning
+            <u>här</u>
+          </p>
+          <form class="confirm-form">
+            <label for="first-name">Förnamn</label>
+            <input type="text" name="first-name" placeholder="" class="confirm-form-text-input first-name">
+            <label for="last-name">Efternamn</label>
+            <input type="text" name="last-name" placeholder="" class="confirm-form-text-input last-name">
+            <label for="last-name">Email</label>
+            <input type="text" name="email" placeholder="" class="confirm-form-text-input email">
+
+            <input type="checkbox" name="consent-contact-info" class="checkbox-contact-info">
+            <label for="consent-contact-info" class="label-contact-info">Jag samtycker till Lisebergs
+              <u>villkor för personuppgiftshantering</u></label>
+
+            <button class="confirm-form-submit">SKICKA</button>
+          </form>
+        </div>
         <div class="page-2-content-container">
           <svg width="101" height="52" viewbox="0 0 101 52" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M8.58074 39.7072C6.81406 40.0437 5.63628 39.2865 4.83706 38.5714L4.75294 38.4873L3.95373 39.5389L4.03785 39.581C5.46802 40.8429 7.06644 41.3056 8.83312 40.927C11.0204 40.5064 12.4085 38.6135 11.9879 36.5944C11.7355 35.2905 10.8522 34.3651 9.33789 33.7762C8.70693 33.5238 8.03391 33.3976 7.36089 33.2714C5.8466 32.9349 4.54262 32.6825 4.24817 31.3785C3.99579 30.0746 4.83706 28.9809 6.3093 28.6865C7.27676 28.5182 8.03391 28.6444 9.04344 29.2333L9.12757 29.2754L9.75853 28.1396L9.6744 28.0976C9.25376 27.8452 7.90772 27.088 6.05691 27.4666C3.8696 27.8872 2.56562 29.696 2.98626 31.715C3.28071 33.1452 4.37436 33.7341 5.34183 34.1127C5.93072 34.323 6.60374 34.4913 7.2347 34.6174C8.83312 34.954 10.3474 35.2905 10.6839 36.8889C10.9363 38.3191 9.80059 39.4548 8.58074 39.7072Z" fill="#FF5C6F"></path>
@@ -121,7 +151,7 @@
         <h2>DISCLAIMER!</h2>
         <p>
           Hela detta event med tillhörande kommunikation är
-          <b class="fiktivt">FIKTIVT</b> och framtaget av studenter vid YRGO
+          <b class="fiktivt">FIKTIVT</b> och framtaget av studenter vid Yrgo
           yrkeshögskola <b>helt utan Lisebergs vetskap eller inblandning </b>
         </p>
       </div>
@@ -129,20 +159,19 @@
         <h2>Få vårt nyhetsbrev</h2>
         <p>Var först med de senaste nyheterna och ta del av våra erbjudande</p>
         <form class="signup-sheet" action="">
-          <label class="email-label" for="email">email</label>
+          <label class="email-label" for="email" hidden="true">email</label>
           <input type="text" class="input-email" name="email" placeholder="email">
           <div class="label-consent-box">
+            <input type="checkbox" name="consent" class="consent-checkbox">
             <label for="consent">Jag samtycker till Lisebergs
               <u>Villkor för personuppgiftshantering.</u>
-              <input type="checkbox" name="consent" class="consent-checkbox">
             </label>
           </div>
-          <!-- label eller text? -->
         </form>
         <button>PRENUMERERA</button>
       </div>
     </section>
 
-    <script src="/app.33e25dae.js"></script>
+    <script src="/index.1397955d.js"></script>
   </body>
 </html>

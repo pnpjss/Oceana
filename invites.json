@@ -6,6 +6,7 @@
     "4Postnr": "400 12",
     "5Ort": "Göteborg",
     "6Lopnr": 1,
+    "8Epost": "@skola.goteborg.se",
     "7Hemsida": "https://oceana-git-master-pnpjss.vercel.app/",
     "#Uniklandningssida": "https://oceana-git-master-pnpjss.vercel.app/id=1"
   },
@@ -16,6 +17,7 @@
     "4Postnr": "413 15",
     "5Ort": "Göteborg",
     "6Lopnr": 2,
+    "8Epost": "ellada0224@skola.goteborg.se",
     "7Hemsida": "https://oceana-git-master-pnpjss.vercel.app/",
     "#Uniklandningssida": "https://oceana-git-master-pnpjss.vercel.app/id=2"
   },
@@ -26,6 +28,7 @@
     "4Postnr": "412 62",
     "5Ort": "Göteborg",
     "6Lopnr": 3,
+    "8Epost": "fanalv2001@skola.goteborg.se",
     "7Hemsida": "https://oceana-git-master-pnpjss.vercel.app/",
     "#Uniklandningssida": "https://oceana-git-master-pnpjss.vercel.app/id=3"
   },
@@ -36,6 +39,7 @@
     "4Postnr": "414 55",
     "5Ort": "Göteborg",
     "6Lopnr": 4,
+    "8Epost": "sarnal2003@skola.goteborg.se",
     "7Hemsida": "https://oceana-git-master-pnpjss.vercel.app/",
     "#Uniklandningssida": "https://oceana-git-master-pnpjss.vercel.app/4"
   },
@@ -46,6 +50,7 @@
     "4Postnr": "416 80",
     "5Ort": "Göteborg",
     "6Lopnr": 5,
+    "8Epost": "evebak0709@skola.goteborg.se",
     "7Hemsida": "https://oceana-git-master-pnpjss.vercel.app/",
     "#Uniklandningssida": "https://oceana-git-master-pnpjss.vercel.app/5"
   },
@@ -56,6 +61,7 @@
     "4Postnr": "421 66",
     "5Ort": "Västra Frölunda",
     "6Lopnr": 6,
+    "8Epost": "josbec0922@skola.goteborg.se",
     "7Hemsida": "https://oceana-git-master-pnpjss.vercel.app/",
     "#Uniklandningssida": "https://oceana-git-master-pnpjss.vercel.app/id=6"
   },
@@ -63,9 +69,10 @@
     "1Fornamn": "Frida",
     "2Efternamn": "Borbély",
     "3Adress1": "Fanjunkaregatan 7F",
-    "4Postnr": "41504",
+    "4Postnr": 41504,
     "5Ort": "Göteborg",
     "6Lopnr": 7,
+    "8Epost": "fribor0412@skola.goteborg.se",
     "7Hemsida": "https://oceana-git-master-pnpjss.vercel.app/",
     "#Uniklandningssida": "https://oceana-git-master-pnpjss.vercel.app/id=7"
   },
@@ -73,9 +80,10 @@
     "1Fornamn": "Lisa",
     "2Efternamn": "Schneiderman",
     "3Adress1": "Eklanda Skog 34",
-    "4Postnr": "43149",
+    "4Postnr": 43149,
     "5Ort": "Mölndal",
     "6Lopnr": 8,
+    "8Epost": "lissch0301@skola.goteborg.se",
     "7Hemsida": "https://oceana-git-master-pnpjss.vercel.app/",
     "#Uniklandningssida": "https://oceana-git-master-pnpjss.vercel.app/id=8"
   },
@@ -86,6 +94,7 @@
     "4Postnr": "416 69",
     "5Ort": "Göteborg",
     "6Lopnr": 9,
+    "8Epost": "matcar2005@skola.goteborg.se",
     "7Hemsida": "https://oceana-git-master-pnpjss.vercel.app/",
     "#Uniklandningssida": "https://oceana-git-master-pnpjss.vercel.app/id=9"
   },
@@ -93,9 +102,10 @@
     "1Fornamn": "Teresa",
     "2Efternamn": "Eriksson",
     "3Adress1": "Hårsåsen Skogshöjden 1",
-    "4Postnr": "50765",
+    "4Postnr": 50765,
     "5Ort": "Borås",
     "6Lopnr": 10,
+    "8Epost": "tereri1123@skola.goteborg.se",
     "7Hemsida": "https://oceana-git-master-pnpjss.vercel.app/",
     "#Uniklandningssida": "https://oceana-git-master-pnpjss.vercel.app/id=10"
   },
@@ -103,9 +113,10 @@
     "1Fornamn": "Adam",
     "2Efternamn": "Augustsson",
     "3Adress1": "Balladgatan 12",
-    "4Postnr": "50471",
+    "4Postnr": 50471,
     "5Ort": "Borås",
     "6Lopnr": 11,
+    "8Epost": "adaagu2001@skola.goteborg.se",
     "7Hemsida": "https://oceana-git-master-pnpjss.vercel.app/",
     "#Uniklandningssida": "https://oceana-git-master-pnpjss.vercel.app/id=11"
   },
@@ -116,6 +127,7 @@
     "4Postnr": "415 31",
     "5Ort": "Göteborg",
     "6Lopnr": 12,
+    "8Epost": "phihol0717@skola.goteborg.se",
     "7Hemsida": "https://oceana-git-master-pnpjss.vercel.app/",
     "#Uniklandningssida": "https://oceana-git-master-pnpjss.vercel.app/id=12"
   },
@@ -126,6 +138,7 @@
     "4Postnr": "414 59",
     "5Ort": "Göteborg",
     "6Lopnr": 13,
+    "8Epost": "lislof2002@skola.goteborg.se",
     "7Hemsida": "https://oceana-git-master-pnpjss.vercel.app/",
     "#Uniklandningssida": "https://oceana-git-master-pnpjss.vercel.app/id=13"
   },
@@ -136,6 +149,7 @@
     "4Postnr": "428 32",
     "5Ort": "Kållered",
     "6Lopnr": 14,
+    "8Epost": "johhel2011@skola.goteborg.se",
     "7Hemsida": "https://oceana-git-master-pnpjss.vercel.app/",
     "#Uniklandningssida": "https://oceana-git-master-pnpjss.vercel.app/14"
   },
@@ -146,6 +160,7 @@
     "4Postnr": "416 53",
     "5Ort": "Göteborg",
     "6Lopnr": 15,
+    "8Epost": "aldcri0514@skola.goteborg.se",
     "7Hemsida": "https://oceana-git-master-pnpjss.vercel.app/",
     "#Uniklandningssida": "https://oceana-git-master-pnpjss.vercel.app/15"
   },
@@ -156,6 +171,7 @@
     "4Postnr": "417 39",
     "5Ort": "Göteborg",
     "6Lopnr": 16,
+    "8Epost": "joseld0508@skola.goteborg.se",
     "7Hemsida": "https://oceana-git-master-pnpjss.vercel.app/",
     "#Uniklandningssida": "https://oceana-git-master-pnpjss.vercel.app/16"
   },
@@ -164,8 +180,9 @@
     "2Efternamn": "Nikpay",
     "3Adress1": "Norra Ågatan 5F",
     "4Postnr": "416 49",
-    "5Ort": "Göteborg ",
+    "5Ort": "Göteborg",
     "6Lopnr": 17,
+    "8Epost": "negnik0325@skola.goteborg.se",
     "7Hemsida": "https://oceana-git-master-pnpjss.vercel.app/",
     "#Uniklandningssida": "https://oceana-git-master-pnpjss.vercel.app/17"
   },
@@ -176,6 +193,7 @@
     "4Postnr": "416 60",
     "5Ort": "Göteborg",
     "6Lopnr": 18,
+    "8Epost": "cornor2001@skola.goteborg.se",
     "7Hemsida": "https://oceana-git-master-pnpjss.vercel.app/",
     "#Uniklandningssida": "https://oceana-git-master-pnpjss.vercel.app/18"
   },
@@ -183,9 +201,10 @@
     "1Fornamn": "Edvin",
     "2Efternamn": "Oldin",
     "3Adress1": "Sägengatan 66",
-    "4Postnr": "42258",
+    "4Postnr": 42258,
     "5Ort": "Hisings Backa",
     "6Lopnr": 19,
+    "8Epost": "edvold0504@skola.goteborg.se",
     "7Hemsida": "https://oceana-git-master-pnpjss.vercel.app/",
     "#Uniklandningssida": "https://oceana-git-master-pnpjss.vercel.app/19"
   },
@@ -193,9 +212,10 @@
     "1Fornamn": "Lisa",
     "2Efternamn": "Persson",
     "3Adress1": "Smörbollsgatan 1A",
-    "4Postnr": "41718",
+    "4Postnr": 41718,
     "5Ort": "Göteborg",
     "6Lopnr": 20,
+    "8Epost": "lisper2004@skola.goteborg.se",
     "7Hemsida": "https://oceana-git-master-pnpjss.vercel.app/",
     "#Uniklandningssida": "https://oceana-git-master-pnpjss.vercel.app/20"
   },
@@ -206,6 +226,7 @@
     "4Postnr": "416 74",
     "5Ort": "Göteborg",
     "6Lopnr": 21,
+    "8Epost": "hansta1207@skola.goteborg.se",
     "7Hemsida": "https://oceana-git-master-pnpjss.vercel.app/",
     "#Uniklandningssida": "https://oceana-git-master-pnpjss.vercel.app/21"
   },
@@ -216,6 +237,7 @@
     "4Postnr": "437 93",
     "5Ort": "Lindome",
     "6Lopnr": 22,
+    "8Epost": "tovran2001@skola.goteborg.se",
     "7Hemsida": "https://oceana-git-master-pnpjss.vercel.app/",
     "#Uniklandningssida": "https://oceana-git-master-pnpjss.vercel.app/id=22"
   },
@@ -226,6 +248,7 @@
     "4Postnr": "425 42",
     "5Ort": "Göteborg",
     "6Lopnr": 23,
+    "8Epost": "antsch0929@skola.goteborg.se",
     "7Hemsida": "https://oceana-git-master-pnpjss.vercel.app/",
     "#Uniklandningssida": "https://oceana-git-master-pnpjss.vercel.app/id=23"
   },
@@ -233,9 +256,10 @@
     "1Fornamn": "Julia",
     "2Efternamn": "Sikström",
     "3Adress1": "Väderlekstorget 2",
-    "4Postnr": "41832",
+    "4Postnr": 41832,
     "5Ort": "Göteborg",
     "6Lopnr": 24,
+    "8Epost": "julsik2001@skola.goteborg.se",
     "7Hemsida": "https://oceana-git-master-pnpjss.vercel.app/",
     "#Uniklandningssida": "https://oceana-git-master-pnpjss.vercel.app/id=24"
   },
@@ -246,6 +270,7 @@
     "4Postnr": "414 74",
     "5Ort": "Göteborg",
     "6Lopnr": 25,
+    "8Epost": "annsim1102@skola.goteborg.se",
     "7Hemsida": "https://oceana-git-master-pnpjss.vercel.app/",
     "#Uniklandningssida": "https://oceana-git-master-pnpjss.vercel.app/id=25"
   },
@@ -256,6 +281,7 @@
     "4Postnr": "411 02",
     "5Ort": "Göteborg",
     "6Lopnr": 26,
+    "8Epost": "dartor0405@skola.goteborg.se",
     "7Hemsida": "https://oceana-git-master-pnpjss.vercel.app/",
     "#Uniklandningssida": "https://oceana-git-master-pnpjss.vercel.app/id=26"
   },
@@ -266,6 +292,7 @@
     "4Postnr": "41 667",
     "5Ort": "Göteborg",
     "6Lopnr": 27,
+    "8Epost": "rebwah2001@skola.goteborg.se",
     "7Hemsida": "https://oceana-git-master-pnpjss.vercel.app/",
     "#Uniklandningssida": "https://oceana-git-master-pnpjss.vercel.app/id=27"
   }

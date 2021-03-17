@@ -11,11 +11,18 @@
       sizes="32x32"
       href="/images/favicon.ico"
     />
-    <link rel="stylesheet" href="style.scss" />
+    <link rel="preload" href="style.scss" as="style" />
+    <link rel="preload" href="app.js" as="script" />
     <title>Oceana</title>
   </head>
   <body>
     <section class="oceana-welcome-container">
+      <!-- <object
+        data="/images/exit_btn.svg"
+        type="image/svg+xml"
+        id="test"
+      ></object> -->
+
       <svg
         width="814"
         height="172"
@@ -133,6 +140,50 @@
     </header>
     <section class="grid-container-section1">
       <div class="grid-section1 item2">
+        <div class="form-bg">
+          <button class="exit-btn">X</button>
+          <h2>Ja, jag vill komma på Oceanas premiärbad</h2>
+          <p>
+            Anmälan till Oceanas invigningsbad 24 april, 10:00 är personlig och
+            bindande. Läst Lisebergs fullständiga villkor för avbokning
+            <u>här</u>
+          </p>
+          <form class="confirm-form">
+            <label for="first-name">Förnamn</label>
+            <input
+              type="text"
+              name="first-name"
+              placeholder=""
+              class="confirm-form-text-input first-name"
+            />
+            <label for="last-name">Efternamn</label>
+            <input
+              type="text"
+              name="last-name"
+              placeholder=""
+              class="confirm-form-text-input last-name"
+            />
+            <label for="last-name">Email</label>
+            <input
+              type="text"
+              name="email"
+              placeholder=""
+              class="confirm-form-text-input email"
+            />
+
+            <input
+              type="checkbox"
+              name="consent-contact-info"
+              class="checkbox-contact-info"
+            />
+            <label for="consent-contact-info" class="label-contact-info"
+              >Jag samtycker till Lisebergs
+              <u>villkor för personuppgiftshantering</u></label
+            >
+
+            <button class="confirm-form-submit">SKICKA</button>
+          </form>
+        </div>
         <div class="page-2-content-container">
           <svg
             width="101"
@@ -231,7 +282,7 @@
         <h2>DISCLAIMER!</h2>
         <p>
           Hela detta event med tillhörande kommunikation är
-          <b class="fiktivt">FIKTIVT</b> och framtaget av studenter vid YRGO
+          <b class="fiktivt">FIKTIVT</b> och framtaget av studenter vid Yrgo
           yrkeshögskola <b>helt utan Lisebergs vetskap eller inblandning </b>
         </p>
       </div>
@@ -239,7 +290,7 @@
         <h2>Få vårt nyhetsbrev</h2>
         <p>Var först med de senaste nyheterna och ta del av våra erbjudande</p>
         <form class="signup-sheet" action="">
-          <label class="email-label" for="email">email</label>
+          <label class="email-label" for="email" hidden="true">email</label>
           <input
             type="text"
             class="input-email"
@@ -247,13 +298,12 @@
             placeholder="email"
           />
           <div class="label-consent-box">
+            <input type="checkbox" name="consent" class="consent-checkbox" />
             <label for="consent"
               >Jag samtycker till Lisebergs
               <u>Villkor för personuppgiftshantering.</u>
-              <input type="checkbox" name="consent" class="consent-checkbox" />
             </label>
           </div>
-          <!-- label eller text? -->
         </form>
         <button>PRENUMERERA</button>
       </div>

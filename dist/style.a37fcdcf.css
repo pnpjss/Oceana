@@ -50,7 +50,7 @@ header {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  z-index: 2;
+  z-index: 10;
   background-color: white;
 }
 header div {
@@ -82,7 +82,7 @@ header button {
 .grid-container-section1, .grid-container-section2, .grid-container-section3 {
   display: grid;
   justify-content: center;
-  grid-template-rows: 90vh;
+  grid-template-rows: 92vh;
   height: 92vh;
   width: 100vw;
   overflow: hidden;
@@ -104,6 +104,44 @@ header button {
 .grid-container-section1 .liseberg-logo-svg, .grid-container-section2 .liseberg-logo-svg, .grid-container-section3 .liseberg-logo-svg {
   margin-left: 25%;
 }
+.grid-container-section1 .page-2-confirm-form, .grid-container-section2 .page-2-confirm-form, .grid-container-section3 .page-2-confirm-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100vw;
+}
+.grid-container-section1 .form-bg, .grid-container-section2 .form-bg, .grid-container-section3 .form-bg {
+  display: flex;
+  height: 92vh;
+  width: 100%;
+}
+.grid-container-section1 .form-bg button, .grid-container-section2 .form-bg button, .grid-container-section3 .form-bg button {
+  display: flex;
+  position: relative;
+  height: 50px;
+  width: 50px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid black;
+}
+.grid-container-section1 .form-bg object, .grid-container-section2 .form-bg object, .grid-container-section3 .form-bg object {
+  display: flex;
+  position: absolute;
+  height: 50px;
+  width: 50px;
+}
+.grid-container-section1 .confirm-a-form, .grid-container-section2 .confirm-a-form, .grid-container-section3 .confirm-a-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.62);
+  z-index: 2;
+  opacity: 1;
+  color: black;
+}
 .grid-container-section1 .confirm-form, .grid-container-section2 .confirm-form, .grid-container-section3 .confirm-form {
   display: flex;
   justify-content: center;
@@ -115,6 +153,22 @@ header button {
   width: 100vw;
   background-color: #292929;
   z-index: 2;
+}
+.grid-container-section1 .confirm-form .exit-box, .grid-container-section2 .confirm-form .exit-box, .grid-container-section3 .confirm-form .exit-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+}
+.grid-container-section1 .confirm-form .exit-btn, .grid-container-section2 .confirm-form .exit-btn, .grid-container-section3 .confirm-form .exit-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  border: 1px solid black;
+  background-color: rgba(0, 0, 0, 0);
 }
 .grid-container-section1 .item2, .grid-container-section2 .item2, .grid-container-section3 .item2 {
   position: relative;
@@ -251,9 +305,10 @@ header button {
 .grid-container-section2, .grid-container-section3 {
   justify-self: center;
   width: 100%;
+  height: 92vh;
   color: #004b66;
   background-image: none;
-  grid-template-rows: 20vh 80vh;
+  grid-template-rows: 20vh 70vh;
   grid-template-columns: 1fr 1fr 1fr;
   flex-direction: column;
   justify-content: space-between;
@@ -310,7 +365,6 @@ header button {
   flex-direction: column;
   grid-row: 2;
   grid-column: 1/4;
-  height: 80vh;
   width: 100%;
   padding: 0;
 }
