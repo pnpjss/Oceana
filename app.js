@@ -85,13 +85,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // create button for confirming ticket
   const confirmBtn = document.querySelector('.confirm-btn');
+
   confirmBtn.addEventListener('click', () => {
     // add functions
     console.log('button clicked');
     formContent.forEach((item) => {
+      console.log('an item');
       console.log(item);
-      item.style.opacity = `1`;
-      item.style.zIndex = `10`;
+
+      function showContent() {
+        item.style.opacity = `1`;
+        item.style.zIndex = `10`;
+      }
+
+      setTimeout(showContent, 400);
     });
 
     // display form and formbg
@@ -115,93 +122,3 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
-
-// const confirmBtn = document.querySelector('.confirm-btn');
-// confirmBtn.addEventListener('click', () => {
-//   let page2 = document.querySelector('.grid-container-section1 .item2');
-//   // create form and form items
-//   let form = document.createElement('form');
-//   // exit button
-//   let exitBtn = document.createElement('button');
-//   exitBtn.setAttribute('class', 'exit-btn');
-//   exitBtn.setAttribute('type', 'submit');
-
-//   exitBtn.addEventListener('click', (ev) => {
-//     ev.preventDefault();
-//     form.remove();
-//   });
-
-//   page2.append(form);
-//   function formStyles() {
-//     form.classList.add('confirm-form');
-//     form.style.transition = `200ms ease-out`;
-//     form.style.height = `100vh`;
-//     form.style.opacity = `1`;
-//     form.style.zIndex = `5`;
-//   }
-//   setTimeout(formStyles, 1);
-// // exit button animation
-// let exitBtnObject = document.createElement('object');
-
-// exitBtnObject.setAttribute('id', 'exit-object');
-// exitBtnObject.setAttribute('type', 'image/svg+xml');
-// exitBtnObject.setAttribute('data', '/images/exit_btn.svg');
-
-// // firstname input and label
-// let firstNameInput = document.createElement('input');
-// let firstNameLabel = document.createElement('label');
-// firstNameInput.setAttribute('class', 'input-firstname');
-// firstNameInput.placeholder = data[userId]['1Fornamn'];
-// firstNameInput.setAttribute('type', 'text');
-// firstNameLabel.setAttribute('for', 'input-firstname');
-// firstNameLabel.textContent = `first name`;
-
-// //lastname input and label
-// let lastNameInput = document.createElement('input');
-// let lastNameLabel = document.createElement('label');
-// lastNameInput.placeholder = data[userId]['2Efternamn'];
-// lastNameInput.setAttribute('class', 'input-lastname');
-// lastNameInput.setAttribute('type', 'text');
-// lastNameLabel.setAttribute('for', 'input-lastname');
-// lastNameLabel.textContent = `last name`;
-
-// //email input and label
-// let emailInput = document.createElement('input');
-// let emailLabel = document.createElement('label');
-// emailInput.setAttribute('class', 'input-email');
-// emailInput.setAttribute('type', 'text');
-// emailLabel.setAttribute('for', 'input-email');
-// emailLabel.textContent = `email`;
-
-// // submit button
-// let submitBtn = document.createElement('button');
-// submitBtn.textContent = `Submit`;
-// submitBtn.setAttribute('type', 'submit');
-// submitBtn.setAttribute('class', 'submit-btn');
-
-// // append all items
-// form.append(exitBtn);
-// form.append(exitBtnObject);
-// form.append(firstNameLabel);
-// form.append(firstNameInput);
-// form.append(lastNameLabel);
-// form.append(lastNameInput);
-// form.append(emailLabel);
-// form.append(emailInput);
-// form.append(submitBtn);
-
-// // append the svg object
-// // needs to run by timeout or else content document is not yet loaded
-// function appendStuff() {
-//   let object = document.querySelector('.confirm-form');
-//   console.log(object);
-//   console.log('exit-objectet efter att det appendats'); // nej
-//   let contentDocument = object.contentDocument;
-//   console.log(contentDocument);
-//   let objectSvg = contentDocument.getElementById('evzbzzngym61');
-//   console.log(objectSvg);
-//   // let exitBtnSvg = contentDocument.querySelector('#evzbzzngym61');
-// }
-// setTimeout(appendStuff, 1000);
-
-// });

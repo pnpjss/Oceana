@@ -11,7 +11,8 @@
       sizes="32x32"
       href="/images/favicon.ico"
     />
-    <link rel="stylesheet" href="style.scss" />
+    <link rel="preload" href="style.scss" as="style" />
+    <link rel="preload" href="app.js" as="script" />
     <title>Oceana</title>
   </head>
   <body>
@@ -303,7 +304,6 @@
               <u>Villkor för personuppgiftshantering.</u>
             </label>
           </div>
-          <!-- label eller text? -->
         </form>
         <button>PRENUMERERA</button>
       </div>

@@ -529,13 +529,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // create button for confirming ticket
   const confirmBtn = document.querySelector('.confirm-btn');
+
   confirmBtn.addEventListener('click', () => {
     // add functions
     console.log('button clicked');
     formContent.forEach((item) => {
+      console.log('an item');
       console.log(item);
-      item.style.opacity = `1`;
-      item.style.zIndex = `10`;
+
+      function showContent() {
+        item.style.opacity = `1`;
+        item.style.zIndex = `10`;
+      }
+
+      setTimeout(showContent, 400);
     });
 
     // display form and formbg
@@ -559,96 +566,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
-
-// const confirmBtn = document.querySelector('.confirm-btn');
-// confirmBtn.addEventListener('click', () => {
-//   let page2 = document.querySelector('.grid-container-section1 .item2');
-//   // create form and form items
-//   let form = document.createElement('form');
-//   // exit button
-//   let exitBtn = document.createElement('button');
-//   exitBtn.setAttribute('class', 'exit-btn');
-//   exitBtn.setAttribute('type', 'submit');
-
-//   exitBtn.addEventListener('click', (ev) => {
-//     ev.preventDefault();
-//     form.remove();
-//   });
-
-//   page2.append(form);
-//   function formStyles() {
-//     form.classList.add('confirm-form');
-//     form.style.transition = `200ms ease-out`;
-//     form.style.height = `100vh`;
-//     form.style.opacity = `1`;
-//     form.style.zIndex = `5`;
-//   }
-//   setTimeout(formStyles, 1);
-// // exit button animation
-// let exitBtnObject = document.createElement('object');
-
-// exitBtnObject.setAttribute('id', 'exit-object');
-// exitBtnObject.setAttribute('type', 'image/svg+xml');
-// exitBtnObject.setAttribute('data', '/images/exit_btn.svg');
-
-// // firstname input and label
-// let firstNameInput = document.createElement('input');
-// let firstNameLabel = document.createElement('label');
-// firstNameInput.setAttribute('class', 'input-firstname');
-// firstNameInput.placeholder = data[userId]['1Fornamn'];
-// firstNameInput.setAttribute('type', 'text');
-// firstNameLabel.setAttribute('for', 'input-firstname');
-// firstNameLabel.textContent = `first name`;
-
-// //lastname input and label
-// let lastNameInput = document.createElement('input');
-// let lastNameLabel = document.createElement('label');
-// lastNameInput.placeholder = data[userId]['2Efternamn'];
-// lastNameInput.setAttribute('class', 'input-lastname');
-// lastNameInput.setAttribute('type', 'text');
-// lastNameLabel.setAttribute('for', 'input-lastname');
-// lastNameLabel.textContent = `last name`;
-
-// //email input and label
-// let emailInput = document.createElement('input');
-// let emailLabel = document.createElement('label');
-// emailInput.setAttribute('class', 'input-email');
-// emailInput.setAttribute('type', 'text');
-// emailLabel.setAttribute('for', 'input-email');
-// emailLabel.textContent = `email`;
-
-// // submit button
-// let submitBtn = document.createElement('button');
-// submitBtn.textContent = `Submit`;
-// submitBtn.setAttribute('type', 'submit');
-// submitBtn.setAttribute('class', 'submit-btn');
-
-// // append all items
-// form.append(exitBtn);
-// form.append(exitBtnObject);
-// form.append(firstNameLabel);
-// form.append(firstNameInput);
-// form.append(lastNameLabel);
-// form.append(lastNameInput);
-// form.append(emailLabel);
-// form.append(emailInput);
-// form.append(submitBtn);
-
-// // append the svg object
-// // needs to run by timeout or else content document is not yet loaded
-// function appendStuff() {
-//   let object = document.querySelector('.confirm-form');
-//   console.log(object);
-//   console.log('exit-objectet efter att det appendats'); // nej
-//   let contentDocument = object.contentDocument;
-//   console.log(contentDocument);
-//   let objectSvg = contentDocument.getElementById('evzbzzngym61');
-//   console.log(objectSvg);
-//   // let exitBtnSvg = contentDocument.querySelector('#evzbzzngym61');
-// }
-// setTimeout(appendStuff, 1000);
-
-// });
 
 },{"./invites.json":"3biW1","prettier":"2wsV2"}],"3biW1":[function(require,module,exports) {
 module.exports = JSON.parse("[{\"1Fornamn\":\"Linn\",\"2Efternamn\":\"Ahlbom\",\"3Adress1\":\"Box 19086\",\"4Postnr\":\"400 12\",\"5Ort\":\"Göteborg\",\"6Lopnr\":1,\"8Epost\":\"@skola.goteborg.se\",\"7Hemsida\":\"https://oceana-git-master-pnpjss.vercel.app/\",\"#Uniklandningssida\":\"https://oceana-git-master-pnpjss.vercel.app/id=1\"},{\"1Fornamn\":\"Ellen\",\"2Efternamn\":\"Adalberth\",\"3Adress1\":\"Eldargatan 4B\",\"4Postnr\":\"413 15\",\"5Ort\":\"Göteborg\",\"6Lopnr\":2,\"8Epost\":\"ellada0224@skola.goteborg.se\",\"7Hemsida\":\"https://oceana-git-master-pnpjss.vercel.app/\",\"#Uniklandningssida\":\"https://oceana-git-master-pnpjss.vercel.app/id=2\"},{\"1Fornamn\":\"Fanny\",\"2Efternamn\":\"Alvermalm\",\"3Adress1\":\"Kullegatan 3A\",\"4Postnr\":\"412 62\",\"5Ort\":\"Göteborg\",\"6Lopnr\":3,\"8Epost\":\"fanalv2001@skola.goteborg.se\",\"7Hemsida\":\"https://oceana-git-master-pnpjss.vercel.app/\",\"#Uniklandningssida\":\"https://oceana-git-master-pnpjss.vercel.app/id=3\"},{\"1Fornamn\":\"Sarah\",\"2Efternamn\":\"Malm\",\"3Adress1\":\"Karl Johansgatan 49D\",\"4Postnr\":\"414 55\",\"5Ort\":\"Göteborg\",\"6Lopnr\":4,\"8Epost\":\"sarnal2003@skola.goteborg.se\",\"7Hemsida\":\"https://oceana-git-master-pnpjss.vercel.app/\",\"#Uniklandningssida\":\"https://oceana-git-master-pnpjss.vercel.app/4\"},{\"1Fornamn\":\"Evelina\",\"2Efternamn\":\"Bakos\",\"3Adress1\":\"Lådspikaregatan 2\",\"4Postnr\":\"416 80\",\"5Ort\":\"Göteborg\",\"6Lopnr\":5,\"8Epost\":\"evebak0709@skola.goteborg.se\",\"7Hemsida\":\"https://oceana-git-master-pnpjss.vercel.app/\",\"#Uniklandningssida\":\"https://oceana-git-master-pnpjss.vercel.app/5\"},{\"1Fornamn\":\"Josefin\",\"2Efternamn\":\"Bech\",\"3Adress1\":\"Vadlagsgatan 3\",\"4Postnr\":\"421 66\",\"5Ort\":\"Västra Frölunda\",\"6Lopnr\":6,\"8Epost\":\"josbec0922@skola.goteborg.se\",\"7Hemsida\":\"https://oceana-git-master-pnpjss.vercel.app/\",\"#Uniklandningssida\":\"https://oceana-git-master-pnpjss.vercel.app/id=6\"},{\"1Fornamn\":\"Frida\",\"2Efternamn\":\"Borbély\",\"3Adress1\":\"Fanjunkaregatan 7F\",\"4Postnr\":41504,\"5Ort\":\"Göteborg\",\"6Lopnr\":7,\"8Epost\":\"fribor0412@skola.goteborg.se\",\"7Hemsida\":\"https://oceana-git-master-pnpjss.vercel.app/\",\"#Uniklandningssida\":\"https://oceana-git-master-pnpjss.vercel.app/id=7\"},{\"1Fornamn\":\"Lisa\",\"2Efternamn\":\"Schneiderman\",\"3Adress1\":\"Eklanda Skog 34\",\"4Postnr\":43149,\"5Ort\":\"Mölndal\",\"6Lopnr\":8,\"8Epost\":\"lissch0301@skola.goteborg.se\",\"7Hemsida\":\"https://oceana-git-master-pnpjss.vercel.app/\",\"#Uniklandningssida\":\"https://oceana-git-master-pnpjss.vercel.app/id=8\"},{\"1Fornamn\":\"Matilda\",\"2Efternamn\":\"Carlsdotter\",\"3Adress1\":\"Gustavsplatsen 1B\",\"4Postnr\":\"416 69\",\"5Ort\":\"Göteborg\",\"6Lopnr\":9,\"8Epost\":\"matcar2005@skola.goteborg.se\",\"7Hemsida\":\"https://oceana-git-master-pnpjss.vercel.app/\",\"#Uniklandningssida\":\"https://oceana-git-master-pnpjss.vercel.app/id=9\"},{\"1Fornamn\":\"Teresa\",\"2Efternamn\":\"Eriksson\",\"3Adress1\":\"Hårsåsen Skogshöjden 1\",\"4Postnr\":50765,\"5Ort\":\"Borås\",\"6Lopnr\":10,\"8Epost\":\"tereri1123@skola.goteborg.se\",\"7Hemsida\":\"https://oceana-git-master-pnpjss.vercel.app/\",\"#Uniklandningssida\":\"https://oceana-git-master-pnpjss.vercel.app/id=10\"},{\"1Fornamn\":\"Adam\",\"2Efternamn\":\"Augustsson\",\"3Adress1\":\"Balladgatan 12\",\"4Postnr\":50471,\"5Ort\":\"Borås\",\"6Lopnr\":11,\"8Epost\":\"adaagu2001@skola.goteborg.se\",\"7Hemsida\":\"https://oceana-git-master-pnpjss.vercel.app/\",\"#Uniklandningssida\":\"https://oceana-git-master-pnpjss.vercel.app/id=11\"},{\"1Fornamn\":\"Philip\",\"2Efternamn\":\"Holmsten\",\"3Adress1\":\"Solvarvsgatan 30\",\"4Postnr\":\"415 31\",\"5Ort\":\"Göteborg\",\"6Lopnr\":12,\"8Epost\":\"phihol0717@skola.goteborg.se\",\"7Hemsida\":\"https://oceana-git-master-pnpjss.vercel.app/\",\"#Uniklandningssida\":\"https://oceana-git-master-pnpjss.vercel.app/id=12\"},{\"1Fornamn\":\"Lisa\",\"2Efternamn\":\"Löfström\",\"3Adress1\":\"Karl Johansgatan 15A\",\"4Postnr\":\"414 59\",\"5Ort\":\"Göteborg\",\"6Lopnr\":13,\"8Epost\":\"lislof2002@skola.goteborg.se\",\"7Hemsida\":\"https://oceana-git-master-pnpjss.vercel.app/\",\"#Uniklandningssida\":\"https://oceana-git-master-pnpjss.vercel.app/id=13\"},{\"1Fornamn\":\"Johanna\",\"2Efternamn\":\"Hellquist\",\"3Adress1\":\"Streteredsvägen 1B\",\"4Postnr\":\"428 32\",\"5Ort\":\"Kållered\",\"6Lopnr\":14,\"8Epost\":\"johhel2011@skola.goteborg.se\",\"7Hemsida\":\"https://oceana-git-master-pnpjss.vercel.app/\",\"#Uniklandningssida\":\"https://oceana-git-master-pnpjss.vercel.app/14\"},{\"1Fornamn\":\"Alda\",\"2Efternamn\":\"Cripljanin\",\"3Adress1\":\"Munkebäcksgatan 26 C\",\"4Postnr\":\"416 53\",\"5Ort\":\"Göteborg\",\"6Lopnr\":15,\"8Epost\":\"aldcri0514@skola.goteborg.se\",\"7Hemsida\":\"https://oceana-git-master-pnpjss.vercel.app/\",\"#Uniklandningssida\":\"https://oceana-git-master-pnpjss.vercel.app/15\"},{\"1Fornamn\":\"Josefin\",\"2Efternamn\":\"Eldh\",\"3Adress1\":\"Skiftesgatan 2C\",\"4Postnr\":\"417 39\",\"5Ort\":\"Göteborg\",\"6Lopnr\":16,\"8Epost\":\"joseld0508@skola.goteborg.se\",\"7Hemsida\":\"https://oceana-git-master-pnpjss.vercel.app/\",\"#Uniklandningssida\":\"https://oceana-git-master-pnpjss.vercel.app/16\"},{\"1Fornamn\":\"Ava\",\"2Efternamn\":\"Nikpay\",\"3Adress1\":\"Norra Ågatan 5F\",\"4Postnr\":\"416 49\",\"5Ort\":\"Göteborg\",\"6Lopnr\":17,\"8Epost\":\"negnik0325@skola.goteborg.se\",\"7Hemsida\":\"https://oceana-git-master-pnpjss.vercel.app/\",\"#Uniklandningssida\":\"https://oceana-git-master-pnpjss.vercel.app/17\"},{\"1Fornamn\":\"Cornelia\",\"2Efternamn\":\"Nordlund\",\"3Adress1\":\"Schéelegatan 4A\",\"4Postnr\":\"416 60\",\"5Ort\":\"Göteborg\",\"6Lopnr\":18,\"8Epost\":\"cornor2001@skola.goteborg.se\",\"7Hemsida\":\"https://oceana-git-master-pnpjss.vercel.app/\",\"#Uniklandningssida\":\"https://oceana-git-master-pnpjss.vercel.app/18\"},{\"1Fornamn\":\"Edvin\",\"2Efternamn\":\"Oldin\",\"3Adress1\":\"Sägengatan 66\",\"4Postnr\":42258,\"5Ort\":\"Hisings Backa\",\"6Lopnr\":19,\"8Epost\":\"edvold0504@skola.goteborg.se\",\"7Hemsida\":\"https://oceana-git-master-pnpjss.vercel.app/\",\"#Uniklandningssida\":\"https://oceana-git-master-pnpjss.vercel.app/19\"},{\"1Fornamn\":\"Lisa\",\"2Efternamn\":\"Persson\",\"3Adress1\":\"Smörbollsgatan 1A\",\"4Postnr\":41718,\"5Ort\":\"Göteborg\",\"6Lopnr\":20,\"8Epost\":\"lisper2004@skola.goteborg.se\",\"7Hemsida\":\"https://oceana-git-master-pnpjss.vercel.app/\",\"#Uniklandningssida\":\"https://oceana-git-master-pnpjss.vercel.app/20\"},{\"1Fornamn\":\"Hanna\",\"2Efternamn\":\"Pålsson\",\"3Adress1\":\"Zachrissonsgatan 7E\",\"4Postnr\":\"416 74\",\"5Ort\":\"Göteborg\",\"6Lopnr\":21,\"8Epost\":\"hansta1207@skola.goteborg.se\",\"7Hemsida\":\"https://oceana-git-master-pnpjss.vercel.app/\",\"#Uniklandningssida\":\"https://oceana-git-master-pnpjss.vercel.app/21\"},{\"1Fornamn\":\"Tova\",\"2Efternamn\":\"Rane\",\"3Adress1\":\"Annebergsvägen 53\",\"4Postnr\":\"437 93\",\"5Ort\":\"Lindome\",\"6Lopnr\":22,\"8Epost\":\"tovran2001@skola.goteborg.se\",\"7Hemsida\":\"https://oceana-git-master-pnpjss.vercel.app/\",\"#Uniklandningssida\":\"https://oceana-git-master-pnpjss.vercel.app/id=22\"},{\"1Fornamn\":\"Anton\",\"2Efternamn\":\"Schmidt\",\"3Adress1\":\"Ponnybacken 1\",\"4Postnr\":\"425 42\",\"5Ort\":\"Göteborg\",\"6Lopnr\":23,\"8Epost\":\"antsch0929@skola.goteborg.se\",\"7Hemsida\":\"https://oceana-git-master-pnpjss.vercel.app/\",\"#Uniklandningssida\":\"https://oceana-git-master-pnpjss.vercel.app/id=23\"},{\"1Fornamn\":\"Julia\",\"2Efternamn\":\"Sikström\",\"3Adress1\":\"Väderlekstorget 2\",\"4Postnr\":41832,\"5Ort\":\"Göteborg\",\"6Lopnr\":24,\"8Epost\":\"julsik2001@skola.goteborg.se\",\"7Hemsida\":\"https://oceana-git-master-pnpjss.vercel.app/\",\"#Uniklandningssida\":\"https://oceana-git-master-pnpjss.vercel.app/id=24\"},{\"1Fornamn\":\"Annie\",\"2Efternamn\":\"Simlund\",\"3Adress1\":\"Asperögatan 3B\",\"4Postnr\":\"414 74\",\"5Ort\":\"Göteborg\",\"6Lopnr\":25,\"8Epost\":\"annsim1102@skola.goteborg.se\",\"7Hemsida\":\"https://oceana-git-master-pnpjss.vercel.app/\",\"#Uniklandningssida\":\"https://oceana-git-master-pnpjss.vercel.app/id=25\"},{\"1Fornamn\":\"Dara\",\"2Efternamn\":\"Torabpour\",\"3Adress1\":\"Folkungagatan 6B\",\"4Postnr\":\"411 02\",\"5Ort\":\"Göteborg\",\"6Lopnr\":26,\"8Epost\":\"dartor0405@skola.goteborg.se\",\"7Hemsida\":\"https://oceana-git-master-pnpjss.vercel.app/\",\"#Uniklandningssida\":\"https://oceana-git-master-pnpjss.vercel.app/id=26\"},{\"1Fornamn\":\"Rebecca\",\"2Efternamn\":\"Wahl\",\"3Adress1\":\"Sparvgatan 3D\",\"4Postnr\":\"41 667\",\"5Ort\":\"Göteborg\",\"6Lopnr\":27,\"8Epost\":\"rebwah2001@skola.goteborg.se\",\"7Hemsida\":\"https://oceana-git-master-pnpjss.vercel.app/\",\"#Uniklandningssida\":\"https://oceana-git-master-pnpjss.vercel.app/id=27\"}]");
