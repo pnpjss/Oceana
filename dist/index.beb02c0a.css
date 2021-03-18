@@ -85,6 +85,7 @@ header button {
   border: none;
   padding: 0;
   transition: 150ms ease-in-out;
+  background-color: rgba(173, 216, 230, 0);
 }
 .grid-container-section1, .grid-container-section2, .grid-container-section3 {
   display: grid;
@@ -476,7 +477,7 @@ header button {
     width: 30%;
   }
 }
-.page-2-content-container h4 {
+.page-2-content-container h3 {
   margin: -0.5rem 0rem 0rem 0rem;
   width: 80%;
   font-weight: bold;
@@ -484,27 +485,27 @@ header button {
   color: #fe5c6f;
 }
 @media screen and (max-width: 290px) {
-  .page-2-content-container h4 {
+  .page-2-content-container h3 {
     padding-left: 1rem;
     width: 14rem;
     font-size: 12px;
   }
 }
 @media screen and (max-width: 376px) {
-  .page-2-content-container h4 {
+  .page-2-content-container h3 {
     padding-left: 1rem;
     width: 17rem;
   }
 }
 @media (min-width: 599px) and (max-width: 650px) {
-  .page-2-content-container h4 {
+  .page-2-content-container h3 {
     font-size: 22px;
     padding-left: 1rem;
     margin-bottom: 0;
   }
 }
 @media screen and (min-width: 750px) {
-  .page-2-content-container h4 {
+  .page-2-content-container h3 {
     margin-top: 2.5rem;
     width: 60%;
     font-size: 32px;
@@ -512,7 +513,7 @@ header button {
   }
 }
 @media screen and (min-width: 800px) {
-  .page-2-content-container h4 {
+  .page-2-content-container h3 {
     font-size: 24px;
     line-height: 46.83px;
     padding: 0;
@@ -520,7 +521,7 @@ header button {
   }
 }
 @media screen and (min-width: 1000px) {
-  .page-2-content-container h4 {
+  .page-2-content-container h3 {
     font-size: 32px;
     line-height: 46.83px;
     width: 45%;

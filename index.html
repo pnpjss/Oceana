@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="Oceana-opening-event" />
+    <meta name="Description" content="Oceana opening event invitation" />
     <meta name="theme-color" content="#004b66" />
     <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
     <link
@@ -38,6 +38,7 @@
         height="172"
         viewBox="0 0 814 172"
         fill="none"
+        alt="Oceana page introduction"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
@@ -75,6 +76,7 @@
           height="23"
           viewBox="0 0 76 23"
           fill="none"
+          alt="Liseberg header logo"
           xmlns="http://www.w3.org/2000/svg"
         >
           <g clip-path="url(#clip0)">
@@ -162,6 +164,7 @@
             <label for="first-name">Förnamn</label>
             <input
               type="text"
+              id="first-name"
               name="first-name"
               placeholder=""
               class="confirm-form-text-input first-name"
@@ -169,6 +172,7 @@
             <label for="last-name">Efternamn</label>
             <input
               type="text"
+              id="last-name"
               name="last-name"
               placeholder=""
               class="confirm-form-text-input last-name"
@@ -176,6 +180,7 @@
             <label for="last-name">Email</label>
             <input
               type="text"
+              id="email"
               name="email"
               placeholder=""
               class="confirm-form-text-input email"
@@ -183,6 +188,7 @@
 
             <input
               type="checkbox"
+              id="consent-contact-info"
               name="consent-contact-info"
               class="checkbox-contact-info"
             />
@@ -200,6 +206,7 @@
             height="52"
             viewBox="0 0 101 52"
             fill="none"
+            alt="Ses snart bild"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
@@ -244,7 +251,7 @@
             />
           </svg>
           <h2>Välkommen på premiärbad</h2>
-          <h4 class="user-name"></h4>
+          <h3 class="user-name"></h3>
           <p>
             Du har blivit inbjuden till världspremiären av liseberg nya
             äventyrsbad Oceana. Vi har ett begränsat antal besökare så säkra din
@@ -312,15 +319,23 @@
         <h2>Få vårt nyhetsbrev</h2>
         <p>Var först med de senaste nyheterna och ta del av våra erbjudande</p>
         <form class="signup-sheet" action="">
-          <label class="email-label" for="email" hidden="true">email</label>
+          <label class="email-label" for="signup-email" hidden="true"
+            >email</label
+          >
           <input
             type="text"
             class="input-email"
+            id="signup-email"
             name="email"
             placeholder="email"
           />
           <div class="label-consent-box">
-            <input type="checkbox" name="consent" class="consent-checkbox" />
+            <input
+              type="checkbox"
+              name="consent"
+              id="consent"
+              class="consent-checkbox"
+            />
             <label for="consent"
               >Jag samtycker till Lisebergs
               <u>Villkor för personuppgiftshantering.</u>
