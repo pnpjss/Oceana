@@ -4,6 +4,7 @@
   font-family: 'Brown';
   src: url('/fonts/Brown-Regular.woff');
   src: url('/fonts/Brown-Regular.woff2');
+  font-display: swap;
 }
 * {
   box-sizing: border-box;
@@ -130,6 +131,7 @@ header {
   .form-bg {
     display: flex;
     justify-content: center;
+    align-self: flex-start;
     align-items: center;
     flex-direction: column;
     height: 0vh;
@@ -138,7 +140,7 @@ header {
     border: 2rem solid $lightblue;
     opacity: 1;
     z-index: 5;
-    transition: 200ms;
+    transition: 150ms;
     h2 {
       font-size: 36px;
       color: $mainblue;
@@ -499,7 +501,6 @@ header {
     }
   }
 
-  // extend
   button {
     display: flex;
     justify-content: center;
@@ -512,7 +513,7 @@ header {
     font-size: 16px;
     margin-top: 1rem;
     border: none;
-
+    transition: 100ms ease-in-out;
     @media screen and (max-width: 376px) {
       margin-bottom: 1rem;
       margin-top: 0rem;
@@ -525,6 +526,11 @@ header {
     @media screen and (min-width: 750px) {
       margin-top: 5rem;
     }
+  }
+  button:hover {
+    background-color: $bgthinblue;
+    border: 3px solid $mainblue;
+    color: $mainblue;
   }
   .item4 {
     height: auto;
@@ -663,6 +669,7 @@ header {
     width: 8rem;
     margin-bottom: 1rem;
     font-size: 18px;
+    transition: 100ms ease-in-out;
 
     @media screen and (max-width: 361px) {
       height: 2.5rem;
@@ -673,6 +680,11 @@ header {
     @media screen and (min-width: 750px) {
       margin-top: 1rem;
     }
+  }
+  button:hover {
+    background-color: $mainblue;
+    border: 3px solid $mainblue;
+    color: white;
   }
 }
 .grid-container-section3 {
@@ -859,6 +871,7 @@ header {
       width: 10rem;
       margin-bottom: 1rem;
       margin-left: 50%;
+      border: 3px solid $mainblue;
       @media (min-width: 319px) and (max-width: 325px) {
         margin-top: 0.3rem;
       }
@@ -872,6 +885,11 @@ header {
         font-size: 16px;
         margin-left: -2rem;
       }
+    }
+    button:hover {
+      background-color: $mainblue;
+      color: white;
+      border-color: white;
     }
   }
 }

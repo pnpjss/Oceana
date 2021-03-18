@@ -98,11 +98,11 @@ document.addEventListener('DOMContentLoaded', () => {
         item.style.zIndex = `10`;
       }
 
-      setTimeout(showContent, 400);
+      setTimeout(showContent, 200);
     });
 
-    // display form and formbg
     formBg.style.height = `92vh`;
+    // display form and formbg
   });
 
   // the exit button
@@ -113,12 +113,15 @@ document.addEventListener('DOMContentLoaded', () => {
   console.log(exitBtn);
   exitBtn.addEventListener('click', (ev) => {
     ev.preventDefault();
-    formBg.style.height = `0vh`;
     console.log('exit button click');
     formContent.forEach((item) => {
       console.log(item);
-      item.style.opacity = `0`;
-      item.style.zIndex = `-1`;
+      function hideContent() {
+        item.style.opacity = `0`;
+        item.style.zIndex = `-1`;
+      }
+      setTimeout(hideContent, 200);
     });
+    formBg.style.height = `0vh`;
   });
 });
