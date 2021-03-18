@@ -1,6 +1,13 @@
 const { doc } = require('prettier');
 
 document.addEventListener('DOMContentLoaded', () => {
+  const waves = document.querySelector('#waves');
+  const logo = document.querySelector('#oceana-logo');
+  console.log(waves);
+  waves.style.transform = `scale(3)`;
+  waves.style.top = `-10%`;
+  logo.style.top = `24%`;
+
   const page3btns = document.querySelectorAll(
     '.grid-container-section2 .grid-section2 button'
   );
@@ -98,7 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
         item.style.zIndex = `10`;
       }
 
-      setTimeout(showContent, 200);
+      setTimeout(showContent, 250);
     });
 
     formBg.style.height = `92vh`;
