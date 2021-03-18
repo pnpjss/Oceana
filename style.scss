@@ -56,6 +56,8 @@ body {
     position: absolute;
     width: 75%;
     top: 100%;
+
+    transition: 1000ms cubic-bezier(0, 0.85, 1, 1) 400ms;
     @media screen and (max-width: 500px) {
       width: 75%;
       @media screen and (min-width: 750px) {
