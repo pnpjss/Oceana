@@ -2,6 +2,7 @@
   font-family: "Brown";
   src: url("Brown-Regular.7e007234.woff");
   src: url("Brown-Regular.5c24734e.woff2");
+  font-display: swap;
 }
 * {
   box-sizing: border-box;
@@ -120,6 +121,7 @@ header button {
 .grid-container-section1 .form-bg, .grid-container-section2 .form-bg, .grid-container-section3 .form-bg {
   display: flex;
   justify-content: center;
+  align-self: flex-start;
   align-items: center;
   flex-direction: column;
   height: 0vh;
@@ -128,7 +130,7 @@ header button {
   border: 2rem solid #96c0d6;
   opacity: 1;
   z-index: 5;
-  transition: 200ms;
+  transition: 150ms;
 }
 .grid-container-section1 .form-bg h2, .grid-container-section2 .form-bg h2, .grid-container-section3 .form-bg h2 {
   font-size: 36px;
@@ -585,6 +587,7 @@ header button {
   font-size: 16px;
   margin-top: 1rem;
   border: none;
+  transition: 100ms ease-in-out;
 }
 @media screen and (max-width: 376px) {
   .page-2-content-container button {
@@ -603,6 +606,11 @@ header button {
   .page-2-content-container button {
     margin-top: 5rem;
   }
+}
+.page-2-content-container button:hover {
+  background-color: #e3f5ff;
+  border: 3px solid #004b66;
+  color: #004b66;
 }
 .page-2-content-container .item4 {
   height: auto;
@@ -749,6 +757,7 @@ header button {
   width: 8rem;
   margin-bottom: 1rem;
   font-size: 18px;
+  transition: 100ms ease-in-out;
 }
 @media screen and (max-width: 361px) {
   .grid-container-section2 button, .grid-container-section3 button {
@@ -762,6 +771,11 @@ header button {
   .grid-container-section2 button, .grid-container-section3 button {
     margin-top: 1rem;
   }
+}
+.grid-container-section2 button:hover, .grid-container-section3 button:hover {
+  background-color: #004b66;
+  border: 3px solid #004b66;
+  color: white;
 }
 .grid-container-section3 {
   background-image: none;
@@ -958,6 +972,7 @@ header button {
   width: 10rem;
   margin-bottom: 1rem;
   margin-left: 50%;
+  border: 3px solid #004b66;
 }
 @media (min-width: 319px) and (max-width: 325px) {
   .grid-container-section3 .s3-item2 button {
@@ -975,5 +990,10 @@ header button {
     font-size: 16px;
     margin-left: -2rem;
   }
+}
+.grid-container-section3 .s3-item2 button:hover {
+  background-color: #004b66;
+  color: white;
+  border-color: white;
 }
 /*# sourceMappingURL=index.beb02c0a.css.map */

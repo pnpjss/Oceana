@@ -4,25 +4,35 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <meta name="Oceana-opening-event" />
+    <meta name="theme-color" content="#004b66" />
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="/images/favicon.ico"
     />
-    <link rel="preload" href="style.scss" as="style" />
-    <link rel="preload" href="app.js" as="script" />
+    <link
+      rel="preload"
+      href="/fonts/Brown-Regular.woff"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="/fonts/Brown-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.scss" as="style" />
+    <link href="app.js" as="script" />
     <title>Oceana</title>
   </head>
   <body>
     <section class="oceana-welcome-container">
-      <!-- <object
-        data="/images/exit_btn.svg"
-        type="image/svg+xml"
-        id="test"
-      ></object> -->
-
       <svg
         width="814"
         height="172"
@@ -129,13 +139,13 @@
         </svg>
       </div>
       <div class="header-box2">
-        <button class="btn-calendar"></button>
+        <button class="btn-calendar" aria-label="calendar-button"></button>
       </div>
       <div class="header-box3">
-        <button class="btn-cart"></button>
+        <button class="btn-cart" aria-label="shopping-cart-button"></button>
       </div>
       <div class="header-box4">
-        <button class="btn-search"></button>
+        <button class="btn-search" aria-label="search-button"></button>
       </div>
     </header>
     <section class="grid-container-section1">
@@ -247,17 +257,29 @@
     </section>
     <section class="grid-container-section2">
       <div class="grid-section2 s2-item1">
-        <button class="btn-amusements" id="p3-btn1"></button>
+        <button
+          class="btn-amusements"
+          id="amusements"
+          aria-label="amusements-button"
+        ></button>
         <p>Attraktioner</p>
         <div class="hover-line" id="p3-btn1"></div>
       </div>
       <div class="grid-section2 s2-item2">
-        <button class="btn-tickets" id="p3-btn2"></button>
+        <button
+          class="btn-tickets"
+          id="tickets"
+          aria-label="tickets-button"
+        ></button>
         <p>Biljetter</p>
         <div class="hover-line" id="p3-btn2"></div>
       </div>
       <div class="grid-section2 s2-item3">
-        <button class="btn-opening-hours" id="p3-btn3"></button>
+        <button
+          class="btn-opening-hours"
+          id="opening-hours"
+          aria-label="openings-hours-button"
+        ></button>
         <p>Öppettider</p>
         <div class="hover-line" id="p3-btn3"></div>
       </div>
