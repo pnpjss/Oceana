@@ -2,11 +2,15 @@ const { doc } = require('prettier');
 
 document.addEventListener('DOMContentLoaded', () => {
   const waves = document.querySelector('#waves');
-  const logo = document.querySelector('#oceana-logo');
-  console.log(waves);
+  const h2Premier = document.querySelector('#h2-premier');
+  const h2Date = document.querySelector('#h2-date');
+
+  console.log(h2Premier);
   waves.style.transform = `scale(3)`;
   waves.style.top = `-10%`;
-  logo.style.top = `24%`;
+
+  h2Premier.style.opacity = `1`;
+  h2Date.style.opacity = `1`;
 
   const page3btns = document.querySelectorAll(
     '.grid-container-section2 .grid-section2 button'

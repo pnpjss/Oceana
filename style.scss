@@ -35,6 +35,14 @@ body {
 
     // margin-bottom: 12rem;
   }
+  object {
+    position: absolute;
+    z-index: 10;
+    height: 100%;
+    width: 100%;
+    top: -10rem;
+    overflow: hidden;
+  }
   #waves {
     height: 100vh;
     width: 100vw;
@@ -68,13 +76,18 @@ body {
   h2 {
     position: absolute;
     z-index: 10;
+    opacity: 0;
     color: white;
   }
   #h2-premier {
     bottom: 20%;
+    transition-delay: 4s;
+    transition: 2s;
   }
   #h2-date {
     bottom: 15%;
+    transition-delay: 2s;
+    transition: 2s;
   }
 
   @media screen and (min-width: 750px) {
@@ -181,8 +194,8 @@ header {
     width: 100vw;
     background-color: $bgthinblue;
     border: 2rem solid $lightblue;
-    opacity: 1;
-    z-index: 5;
+    opacity: 0;
+    z-index: -1;
     transition: 150ms;
     h2 {
       font-size: 36px;

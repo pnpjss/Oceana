@@ -29,6 +29,14 @@ body {
 .oceana-welcome-container svg {
   width: 100vh;
 }
+.oceana-welcome-container object {
+  position: absolute;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  top: -10rem;
+  overflow: hidden;
+}
 .oceana-welcome-container #waves {
   height: 100vh;
   width: 100vw;
@@ -67,13 +75,18 @@ body {
 .oceana-welcome-container h2 {
   position: absolute;
   z-index: 10;
+  opacity: 0;
   color: white;
 }
 .oceana-welcome-container #h2-premier {
   bottom: 20%;
+  transition-delay: 4s;
+  transition: 2s;
 }
 .oceana-welcome-container #h2-date {
   bottom: 15%;
+  transition-delay: 2s;
+  transition: 2s;
 }
 @media screen and (min-width: 750px) {
   .oceana-welcome-container h2 {
@@ -174,8 +187,8 @@ header button {
   width: 100vw;
   background-color: #e3f5ff;
   border: 2rem solid #96c0d6;
-  opacity: 1;
-  z-index: 5;
+  opacity: 0;
+  z-index: -1;
   transition: 150ms;
 }
 .grid-container-section1 .form-bg h2, .grid-container-section2 .form-bg h2, .grid-container-section3 .form-bg h2 {
