@@ -24,19 +24,53 @@ body {
   flex-direction: column;
   height: 100vh;
   width: 100%;
+  overflow: hidden;
 }
 .oceana-welcome-container svg {
-  width: 85vh;
-  margin-bottom: 12rem;
+  width: 100vh;
+}
+.oceana-welcome-container #waves {
+  height: 100vh;
+  width: 100vw;
+  transform: scale(3);
+  overflow: hidden;
+}
+@media screen and (min-width: 800px) {
+  .oceana-welcome-container #waves {
+    transform: scale(2);
+  }
+}
+.oceana-welcome-container #oceana-logo {
+  z-index: 10;
+  position: absolute;
+  width: 75%;
+  top: 25%;
 }
 @media screen and (max-width: 500px) {
-  .oceana-welcome-container svg {
+  .oceana-welcome-container #oceana-logo {
     width: 75%;
   }
 }
+@media screen and (max-width: 500px) and (min-width: 750px) {
+  .oceana-welcome-container #oceana-logo {
+    width: 65%;
+  }
+}
 .oceana-welcome-container h2 {
-  color: #004b66;
-  margin-bottom: -1.4rem;
+  position: absolute;
+  z-index: 10;
+  color: white;
+}
+.oceana-welcome-container #h2-premier {
+  bottom: 20%;
+}
+.oceana-welcome-container #h2-date {
+  bottom: 15%;
+}
+@media screen and (min-width: 750px) {
+  .oceana-welcome-container h2 {
+    font-size: 2em;
+  }
 }
 button {
   cursor: pointer;
@@ -53,7 +87,10 @@ header {
   top: 0;
   z-index: 20;
   background-color: white;
-  border-bottom: 2px solid #004b66;
+  border-bottom: 1px solid #c9c9c9;
+  box-shadow: -1px 2px 20px -5px rgba(8, 8, 8, 0.75);
+  -webkit-box-shadow: -1px 2px 20px -5px rgba(8, 8, 8, 0.75);
+  -moz-box-shadow: -1px 2px 20px -5px rgba(8, 8, 8, 0.75);
 }
 header div {
   display: flex;

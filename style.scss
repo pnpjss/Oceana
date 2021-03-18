@@ -28,19 +28,51 @@ body {
 
   height: 100vh;
   width: 100%;
+  overflow: hidden;
 
   svg {
-    width: 85vh;
-    margin-bottom: 12rem;
+    width: 100vh;
+    // margin-bottom: 12rem;
   }
-  @media screen and (max-width: 500px) {
-    svg {
+  #waves {
+    height: 100vh;
+    width: 100vw;
+
+    transform: scale(3);
+    overflow: hidden;
+
+    @media screen and (min-width: 800px) {
+      transform: scale(2);
+    }
+  }
+  #oceana-logo {
+    z-index: 10;
+    position: absolute;
+    width: 75%;
+    top: 25%;
+    @media screen and (max-width: 500px) {
       width: 75%;
+      @media screen and (min-width: 750px) {
+        width: 65%;
+      }
     }
   }
   h2 {
-    color: $mainblue;
-    margin-bottom: -1.4rem;
+    position: absolute;
+    z-index: 10;
+    color: white;
+  }
+  #h2-premier {
+    bottom: 20%;
+  }
+  #h2-date {
+    bottom: 15%;
+  }
+
+  @media screen and (min-width: 750px) {
+    h2 {
+      font-size: 2em;
+    }
   }
 }
 
@@ -60,7 +92,10 @@ header {
   top: 0;
   z-index: 20;
   background-color: white;
-  border-bottom: 2px solid $mainblue;
+  border-bottom: 1px solid rgb(201, 201, 201);
+  box-shadow: -1px 2px 20px -5px rgba(8, 8, 8, 0.75);
+  -webkit-box-shadow: -1px 2px 20px -5px rgba(8, 8, 8, 0.75);
+  -moz-box-shadow: -1px 2px 20px -5px rgba(8, 8, 8, 0.75);
   div {
     display: flex;
     justify-content: center;

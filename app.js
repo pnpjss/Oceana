@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
         item.style.zIndex = `10`;
       }
 
-      setTimeout(showContent, 200);
+      setTimeout(showContent, 250);
     });
 
     formBg.style.height = `92vh`;
