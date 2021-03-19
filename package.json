@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "build": "parcel build index.html",
+    "build": "parcel build index.html --output public",
     "dev": "parcel index.html",
     "start": "node app.js",
     "ember-progress-bar": "0.0.8-beta"
