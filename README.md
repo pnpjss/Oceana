@@ -2,6 +2,10 @@
 
 Landing page for Lisebergs Oceana opening event
 
+## Assignment
+
+- Create an invitational landing page for a real or fake event of your own choice.
+
 # Design by Teresa Eriksson
 
 ## Code review
@@ -14,3 +18,11 @@ Landing page for Lisebergs Oceana opening event
 - Good use with variables in scss.
 - Love the in-animation and that it just stays there.
 - Over all, site looks great! :)
+
+## Backlog
+
+- Rename, restructure css and html.
+- Fix in-animation on vercel build deployment (i.e. subsequently .gitignore dist)
+- Id on page 3 buttons
+- Alt text in svg object
+- Split css for readability
