@@ -2,9 +2,19 @@
 
 Landing page for Lisebergs Oceana opening event
 
+<<<<<<< HEAD
+
 # Design by Teresa Eriksson
 
 ## Code review
+
+=======
+
+# Design by Teresa Eriksson
+
+## Code review
+
+> > > > > > > 94df6f5806c02508f89c0925905758335569003f
 
 ### Erik White
 
@@ -14,3 +24,7 @@ Landing page for Lisebergs Oceana opening event
 - Good use with variables in scss.
 - Love the in-animation and that it just stays there.
 - Over all, site looks great! :)
+  <<<<<<< HEAD
+  =======
+
+> > > > > > > 94df6f5806c02508f89c0925905758335569003f
