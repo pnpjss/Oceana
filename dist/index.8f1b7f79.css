@@ -2,6 +2,7 @@
   font-family: "Brown";
   src: url("Brown-Regular.7e007234.woff");
   src: url("Brown-Regular.5c24734e.woff2");
+  font-display: swap;
 }
 * {
   box-sizing: border-box;
@@ -23,19 +24,56 @@ body {
   flex-direction: column;
   height: 100vh;
   width: 100%;
+  overflow: hidden;
 }
 .oceana-welcome-container svg {
-  width: 85%;
-  margin-bottom: 12rem;
+  width: 100vh;
 }
-@media screen and (max-width: 500px) {
-  .oceana-welcome-container svg {
-    width: 75%;
+.oceana-welcome-container object {
+  position: absolute;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  top: -25%;
+  overflow: hidden;
+}
+.oceana-welcome-container #waves {
+  height: 100vh;
+  width: 100vw;
+  transition: 1000ms cubic-bezier(0, 0, 0.43, 1.54);
+  top: 40%;
+  transform: scale(8);
+  overflow: hidden;
+}
+@media screen and (min-width: 800px) {
+  .oceana-welcome-container #waves {
+    transform: scale(2);
+  }
+}
+@media (min-width: 1024) and (max-width: 1025) {
+  .oceana-welcome-container #waves {
+    transform: scale(15);
   }
 }
 .oceana-welcome-container h2 {
+  position: absolute;
+  z-index: 10;
+  opacity: 0;
   color: #004b66;
-  margin-bottom: -1.4rem;
+  font-size: 1.25em;
+}
+.oceana-welcome-container #h2-premier {
+  bottom: 55%;
+  transition: 800ms ease-out;
+}
+.oceana-welcome-container #h2-date {
+  bottom: 50%;
+  transition: 800ms ease-out 350ms;
+}
+@media screen and (min-width: 750px) {
+  .oceana-welcome-container h2 {
+    font-size: 2em;
+  }
 }
 button {
   cursor: pointer;
@@ -52,7 +90,10 @@ header {
   top: 0;
   z-index: 20;
   background-color: white;
-  border-bottom: 2px solid #004b66;
+  border-bottom: 1px solid #c9c9c9;
+  box-shadow: -1px 2px 20px -5px rgba(8, 8, 8, 0.75);
+  -webkit-box-shadow: -1px 2px 20px -5px rgba(8, 8, 8, 0.75);
+  -moz-box-shadow: -1px 2px 20px -5px rgba(8, 8, 8, 0.75);
 }
 header div {
   display: flex;
@@ -84,6 +125,7 @@ header button {
   border: none;
   padding: 0;
   transition: 150ms ease-in-out;
+  background-color: rgba(173, 216, 230, 0);
 }
 .grid-container-section1, .grid-container-section2, .grid-container-section3 {
   display: grid;
@@ -120,15 +162,16 @@ header button {
 .grid-container-section1 .form-bg, .grid-container-section2 .form-bg, .grid-container-section3 .form-bg {
   display: flex;
   justify-content: center;
+  align-self: flex-start;
   align-items: center;
   flex-direction: column;
   height: 0vh;
   width: 100vw;
   background-color: #e3f5ff;
   border: 2rem solid #96c0d6;
-  opacity: 1;
-  z-index: 5;
-  transition: 200ms;
+  opacity: 0;
+  z-index: -1;
+  transition: 150ms;
 }
 .grid-container-section1 .form-bg h2, .grid-container-section2 .form-bg h2, .grid-container-section3 .form-bg h2 {
   font-size: 36px;
@@ -224,7 +267,7 @@ header button {
   z-index: 10;
   opacity: 1;
   margin-top: 1rem;
-  padding-left: 1rem;
+  padding-left: 2rem;
 }
 .grid-container-section1 .form-bg .confirm-form label, .grid-container-section2 .form-bg .confirm-form label, .grid-container-section3 .form-bg .confirm-form label {
   width: 18rem;
@@ -235,7 +278,6 @@ header button {
 @media screen and (max-width: 281px) {
   .grid-container-section1 .form-bg .confirm-form label, .grid-container-section2 .form-bg .confirm-form label, .grid-container-section3 .form-bg .confirm-form label {
     font-size: 14px;
-    margin-left: 40%;
     line-height: 14px;
   }
 }
@@ -265,7 +307,7 @@ header button {
 @media screen and (max-width: 281px) {
   .grid-container-section1 .form-bg .confirm-form .confirm-form-text-input, .grid-container-section2 .form-bg .confirm-form .confirm-form-text-input, .grid-container-section3 .form-bg .confirm-form .confirm-form-text-input {
     width: 50%;
-    margin-left: 10%;
+    margin-left: 20%;
     line-height: 14px;
   }
 }
@@ -397,8 +439,14 @@ header button {
   }
 }
 .page-2-content-container svg {
-  margin-top: 2rem;
+  position: absolute;
+  margin-top: 1.5rem;
   width: 80%;
+}
+@media screen and (max-width: 290px) {
+  .page-2-content-container svg {
+    transform: scale(0.8);
+  }
 }
 @media screen and (min-width: 414px) {
   .page-2-content-container svg {
@@ -427,11 +475,19 @@ header button {
 }
 @media screen and (min-width: 1000px) {
   .page-2-content-container svg {
-    margin-top: 6rem;
+    margin-top: 2rem;
+    width: 60%;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .page-2-content-container svg {
+    margin-top: 5%;
+    width: 40%;
   }
 }
 .page-2-content-container h2 {
   color: #004b66;
+  margin-top: 30%;
   width: 20rem;
   text-align: center;
   font-weight: bold;
@@ -443,24 +499,23 @@ header button {
     font-size: 48px;
     width: 35rem;
     line-height: 68.2px;
-    margin-top: -2rem;
   }
 }
 @media screen and (max-width: 290px) {
   .page-2-content-container h2 {
-    padding-left: 1rem;
     width: 14rem;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 35.21px;
+    margin-top: 5rem;
   }
 }
 @media screen and (min-width: 770px) {
   .page-2-content-container h2 {
     font-size: 68px;
     width: 50%;
+    margin-top: 20%;
     margin-bottom: 3rem;
     line-height: 88.2px;
-    margin-top: 2rem;
   }
 }
 @media screen and (max-width: 321px) {
@@ -471,38 +526,43 @@ header button {
 }
 @media screen and (min-width: 1000px) {
   .page-2-content-container h2 {
-    width: 30%;
+    margin-top: 10%;
+    width: 65%;
   }
 }
-.page-2-content-container h4 {
+@media screen and (min-width: 1400px) {
+  .page-2-content-container h2 {
+    margin-top: 10%;
+    width: 40%;
+  }
+}
+.page-2-content-container h3 {
   margin: -0.5rem 0rem 0rem 0rem;
   width: 80%;
   font-weight: bold;
+  padding-left: 1rem;
   font-size: 18px;
   color: #fe5c6f;
 }
 @media screen and (max-width: 290px) {
-  .page-2-content-container h4 {
-    padding-left: 1rem;
-    width: 14rem;
+  .page-2-content-container h3 {
+    width: 100%;
     font-size: 12px;
   }
 }
 @media screen and (max-width: 376px) {
-  .page-2-content-container h4 {
-    padding-left: 1rem;
-    width: 17rem;
+  .page-2-content-container h3 {
+    width: 100%;
   }
 }
 @media (min-width: 599px) and (max-width: 650px) {
-  .page-2-content-container h4 {
+  .page-2-content-container h3 {
     font-size: 22px;
-    padding-left: 1rem;
     margin-bottom: 0;
   }
 }
 @media screen and (min-width: 750px) {
-  .page-2-content-container h4 {
+  .page-2-content-container h3 {
     margin-top: 2.5rem;
     width: 60%;
     font-size: 32px;
@@ -510,20 +570,24 @@ header button {
   }
 }
 @media screen and (min-width: 800px) {
-  .page-2-content-container h4 {
+  .page-2-content-container h3 {
     font-size: 24px;
     line-height: 46.83px;
-    padding: 0;
     margin-top: 0rem;
   }
 }
 @media screen and (min-width: 1000px) {
-  .page-2-content-container h4 {
-    font-size: 32px;
-    line-height: 46.83px;
+  .page-2-content-container h3 {
+    font-size: 28px;
+    line-height: 32px;
     width: 45%;
-    padding: 0;
     margin-top: 0rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .page-2-content-container h3 {
+    margin-top: 3rem;
+    width: 40%;
   }
 }
 .page-2-content-container p {
@@ -568,9 +632,14 @@ header button {
 }
 @media screen and (min-width: 1000px) {
   .page-2-content-container p {
-    font-size: 32px;
-    line-height: 46.83px;
+    font-size: 28px;
+    line-height: 32px;
     width: 45%;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .page-2-content-container p {
+    width: 40%;
   }
 }
 .page-2-content-container button {
@@ -585,6 +654,7 @@ header button {
   font-size: 16px;
   margin-top: 1rem;
   border: none;
+  transition: 100ms ease-in-out;
 }
 @media screen and (max-width: 376px) {
   .page-2-content-container button {
@@ -601,8 +671,13 @@ header button {
 }
 @media screen and (min-width: 750px) {
   .page-2-content-container button {
-    margin-top: 5rem;
+    margin-top: 0rem;
   }
+}
+.page-2-content-container button:hover {
+  background-color: #e3f5ff;
+  border: 3px solid #004b66;
+  color: #004b66;
 }
 .page-2-content-container .item4 {
   height: auto;
@@ -647,9 +722,12 @@ header button {
     transform: scale(0.8);
   }
 }
+.grid-container-section2 .s2-item1 button:hover, .grid-container-section3 .s2-item1 button:hover, .grid-container-section2 .s2-item3 button:hover, .grid-container-section3 .s2-item3 button:hover, .grid-container-section2 .s2-item2 button:hover, .grid-container-section3 .s2-item2 button:hover {
+  border: none;
+}
 .grid-container-section2 .s2-item1 .hover-line, .grid-container-section3 .s2-item1 .hover-line, .grid-container-section2 .s2-item3 .hover-line, .grid-container-section3 .s2-item3 .hover-line, .grid-container-section2 .s2-item2 .hover-line, .grid-container-section3 .s2-item2 .hover-line {
   height: 0.2rem;
-  width: 0;
+  width: 0px;
   background-color: #004b66;
   transition: 150ms ease-in-out;
 }
@@ -749,6 +827,7 @@ header button {
   width: 8rem;
   margin-bottom: 1rem;
   font-size: 18px;
+  transition: 100ms ease-in-out;
 }
 @media screen and (max-width: 361px) {
   .grid-container-section2 button, .grid-container-section3 button {
@@ -762,6 +841,11 @@ header button {
   .grid-container-section2 button, .grid-container-section3 button {
     margin-top: 1rem;
   }
+}
+.grid-container-section2 button:hover, .grid-container-section3 button:hover {
+  background-color: #004b66;
+  border: 3px solid #004b66;
+  color: white;
 }
 .grid-container-section3 {
   background-image: none;
@@ -844,7 +928,12 @@ header button {
 .grid-container-section3 .s3-item2 h2 {
   align-self: flex-start;
   padding-left: 1rem;
-  margin: 0rem;
+  margin-top: 0.5rem;
+}
+@media screen and (max-width: 1100) {
+  .grid-container-section3 .s3-item2 h2 {
+    margin-top: 1rem;
+  }
 }
 @media (min-width: 319px) and (max-width: 325px) {
   .grid-container-section3 .s3-item2 h2 {
@@ -958,6 +1047,7 @@ header button {
   width: 10rem;
   margin-bottom: 1rem;
   margin-left: 50%;
+  border: 3px solid #004b66;
 }
 @media (min-width: 319px) and (max-width: 325px) {
   .grid-container-section3 .s3-item2 button {
@@ -976,4 +1066,9 @@ header button {
     margin-left: -2rem;
   }
 }
-/*# sourceMappingURL=index.beb02c0a.css.map */
+.grid-container-section3 .s3-item2 button:hover {
+  background-color: #004b66;
+  color: white;
+  border-color: white;
+}
+/*# sourceMappingURL=index.8f1b7f79.css.map */
