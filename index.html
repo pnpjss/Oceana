@@ -21,7 +21,7 @@
       type="font/woff2"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.scss" as="style" />
+    <link rel="stylesheet" href="/styles/style.scss" as="style" />
     <link href="app.js" as="script" />
     <link rel="manifest" href="manifest.webapp" />
     <title>Oceana</title>
@@ -118,7 +118,11 @@
           </path>
         </g>
       </svg>
-      <object data="/images/oceana_intro.svg" type="image/svg+xml"></object>
+      <object
+        data="/images/oceana_intro.svg"
+        type="image/svg+xml"
+        alt="Oceana logo image"
+      ></object>
 
       <h2 id="h2-premier">VÄRLDSPREMIÄR</h2>
       <h2 id="h2-date">24 APRIL 2023</h2>
@@ -239,17 +243,18 @@
               placeholder=""
               class="confirm-form-text-input email"
             />
-
-            <input
-              type="checkbox"
-              id="consent-contact-info"
-              name="consent-contact-info"
-              class="checkbox-contact-info"
-            />
-            <label for="consent-contact-info" class="label-contact-info"
-              >Jag samtycker till Lisebergs
-              <u>villkor för personuppgiftshantering</u></label
-            >
+            <div class="checkbox-form-group">
+              <input
+                type="checkbox"
+                id="consent-contact-info"
+                name="consent-contact-info"
+                class="checkbox-contact-info"
+              />
+              <label for="consent-contact-info" class="label-contact-info"
+                >Jag samtycker till Lisebergs
+                <u>villkor för personuppgiftshantering</u></label
+              >
+            </div>
 
             <button class="confirm-form-submit">SKICKA</button>
           </form>
@@ -320,7 +325,7 @@
       <div class="grid-section2 s2-item1">
         <button
           class="btn-amusements"
-          id="amusements"
+          id="p3-btn1"
           aria-label="amusements-button"
         ></button>
         <p>Attraktioner</p>
@@ -329,7 +334,7 @@
       <div class="grid-section2 s2-item2">
         <button
           class="btn-tickets"
-          id="tickets"
+          id="p3-btn2"
           aria-label="tickets-button"
         ></button>
         <p>Biljetter</p>
@@ -338,7 +343,7 @@
       <div class="grid-section2 s2-item3">
         <button
           class="btn-opening-hours"
-          id="opening-hours"
+          id="p3-btn3"
           aria-label="openings-hours-button"
         ></button>
         <p>Öppettider</p>

@@ -152,13 +152,6 @@ header button {
 .grid-container-section1 .liseberg-logo-svg, .grid-container-section2 .liseberg-logo-svg, .grid-container-section3 .liseberg-logo-svg {
   margin-left: 25%;
 }
-.grid-container-section1 .page-2-confirm-form, .grid-container-section2 .page-2-confirm-form, .grid-container-section3 .page-2-confirm-form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 100vw;
-}
 .grid-container-section1 .form-bg, .grid-container-section2 .form-bg, .grid-container-section3 .form-bg {
   display: flex;
   justify-content: center;
@@ -219,8 +212,14 @@ header button {
   .grid-container-section1 .form-bg h2, .grid-container-section2 .form-bg h2, .grid-container-section3 .form-bg h2 {
     font-size: 48px;
     line-height: 52px;
-    width: 33%;
+    width: 80%;
     margin-top: -4rem;
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .grid-container-section1 .form-bg h2, .grid-container-section2 .form-bg h2, .grid-container-section3 .form-bg h2 {
+    width: 47%;
     margin-bottom: 1rem;
   }
 }
@@ -241,7 +240,7 @@ header button {
 @media screen and (max-width: 322px) {
   .grid-container-section1 .form-bg p, .grid-container-section2 .form-bg p, .grid-container-section3 .form-bg p {
     font-size: 14px;
-    width: 75%;
+    width: 80%;
     margin-bottom: 0rem;
     line-height: 16px;
   }
@@ -250,7 +249,15 @@ header button {
   .grid-container-section1 .form-bg p, .grid-container-section2 .form-bg p, .grid-container-section3 .form-bg p {
     font-size: 24px;
     line-height: 28px;
-    width: 45%;
+    width: 60%;
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .grid-container-section1 .form-bg p, .grid-container-section2 .form-bg p, .grid-container-section3 .form-bg p {
+    font-size: 24px;
+    line-height: 28px;
+    width: 47%;
     margin-bottom: 1rem;
   }
 }
@@ -267,9 +274,10 @@ header button {
   z-index: 10;
   opacity: 1;
   margin-top: 1rem;
-  padding-left: 2rem;
+  padding-left: 0rem;
 }
 .grid-container-section1 .form-bg .confirm-form label, .grid-container-section2 .form-bg .confirm-form label, .grid-container-section3 .form-bg .confirm-form label {
+  padding-left: 2rem;
   width: 18rem;
   color: #004b66;
   margin-bottom: 0.2rem;
@@ -285,7 +293,6 @@ header button {
   .grid-container-section1 .form-bg .confirm-form label, .grid-container-section2 .form-bg .confirm-form label, .grid-container-section3 .form-bg .confirm-form label {
     font-size: 14px;
     margin-bottom: 0rem;
-    margin-left: 1.5rem;
     line-height: 24px;
   }
 }
@@ -294,6 +301,7 @@ header button {
   width: 75%;
   border-radius: 2px;
   border: none;
+  margin-left: 2rem;
   box-shadow: 1px 2px 12px -3px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 1px 2px 12px -3px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 1px 2px 12px -3px rgba(0, 0, 0, 0.75);
@@ -301,13 +309,12 @@ header button {
 @media screen and (max-width: 322px) {
   .grid-container-section1 .form-bg .confirm-form .confirm-form-text-input, .grid-container-section2 .form-bg .confirm-form .confirm-form-text-input, .grid-container-section3 .form-bg .confirm-form .confirm-form-text-input {
     height: 1.6rem;
-    margin-left: 1.5rem;
+    margin-left: 3rem;
   }
 }
 @media screen and (max-width: 281px) {
   .grid-container-section1 .form-bg .confirm-form .confirm-form-text-input, .grid-container-section2 .form-bg .confirm-form .confirm-form-text-input, .grid-container-section3 .form-bg .confirm-form .confirm-form-text-input {
     width: 50%;
-    margin-left: 20%;
     line-height: 14px;
   }
 }
@@ -316,79 +323,20 @@ header button {
     font-size: 24px;
   }
 }
-.grid-container-section1 .form-bg .confirm-form .label-contact-info, .grid-container-section2 .form-bg .confirm-form .label-contact-info, .grid-container-section3 .form-bg .confirm-form .label-contact-info {
-  margin-top: 0.5rem;
-  align-self: center;
+.grid-container-section1 .form-bg .confirm-form .checkbox-form-group, .grid-container-section2 .form-bg .confirm-form .checkbox-form-group, .grid-container-section3 .form-bg .confirm-form .checkbox-form-group {
+  display: flex;
   width: 80%;
+  height: auto;
+  flex-direction: row;
+  margin-left: 1.5rem;
+  margin-top: 1rem;
 }
-@media screen and (max-width: 322px) {
-  .grid-container-section1 .form-bg .confirm-form .label-contact-info, .grid-container-section2 .form-bg .confirm-form .label-contact-info, .grid-container-section3 .form-bg .confirm-form .label-contact-info {
-    padding: 0;
-    width: 70%;
-    line-height: 16px;
-  }
-}
-@media screen and (max-width: 281px) {
-  .grid-container-section1 .form-bg .confirm-form .label-contact-info, .grid-container-section2 .form-bg .confirm-form .label-contact-info, .grid-container-section3 .form-bg .confirm-form .label-contact-info {
-    width: 50%;
-    line-height: 14px;
-    padding-top: 1rem;
-  }
+.grid-container-section1 .form-bg .confirm-form .label-contact-info, .grid-container-section2 .form-bg .confirm-form .label-contact-info, .grid-container-section3 .form-bg .confirm-form .label-contact-info {
+  padding-left: 0.3rem;
 }
 .grid-container-section1 .form-bg .confirm-form .checkbox-contact-info, .grid-container-section2 .form-bg .confirm-form .checkbox-contact-info, .grid-container-section3 .form-bg .confirm-form .checkbox-contact-info {
-  bottom: 22%;
-  position: absolute;
-  box-shadow: none;
-}
-@media screen and (max-width: 281px) {
-  .grid-container-section1 .form-bg .confirm-form .checkbox-contact-info, .grid-container-section2 .form-bg .confirm-form .checkbox-contact-info, .grid-container-section3 .form-bg .confirm-form .checkbox-contact-info {
-    left: 20%;
-  }
-}
-@media screen and (max-width: 322px) {
-  .grid-container-section1 .form-bg .confirm-form .checkbox-contact-info, .grid-container-section2 .form-bg .confirm-form .checkbox-contact-info, .grid-container-section3 .form-bg .confirm-form .checkbox-contact-info {
-    left: 18%;
-  }
-}
-@media screen and (min-width: 360px) {
-  .grid-container-section1 .form-bg .confirm-form .checkbox-contact-info, .grid-container-section2 .form-bg .confirm-form .checkbox-contact-info, .grid-container-section3 .form-bg .confirm-form .checkbox-contact-info {
-    bottom: 24%;
-  }
-}
-@media screen and (min-width: 360px) {
-  .grid-container-section1 .form-bg .confirm-form .checkbox-contact-info, .grid-container-section2 .form-bg .confirm-form .checkbox-contact-info, .grid-container-section3 .form-bg .confirm-form .checkbox-contact-info {
-    bottom: 26%;
-  }
-}
-@media screen and (min-width: 411px) {
-  .grid-container-section1 .form-bg .confirm-form .checkbox-contact-info, .grid-container-section2 .form-bg .confirm-form .checkbox-contact-info, .grid-container-section3 .form-bg .confirm-form .checkbox-contact-info {
-    bottom: 30%;
-  }
-}
-@media screen and (min-width: 478px) {
-  .grid-container-section1 .form-bg .confirm-form .checkbox-contact-info, .grid-container-section2 .form-bg .confirm-form .checkbox-contact-info, .grid-container-section3 .form-bg .confirm-form .checkbox-contact-info {
-    bottom: 26%;
-  }
-}
-@media screen and (min-width: 540px) {
-  .grid-container-section1 .form-bg .confirm-form .checkbox-contact-info, .grid-container-section2 .form-bg .confirm-form .checkbox-contact-info, .grid-container-section3 .form-bg .confirm-form .checkbox-contact-info {
-    bottom: 30%;
-  }
-}
-@media screen and (min-width: 750px) {
-  .grid-container-section1 .form-bg .confirm-form .checkbox-contact-info, .grid-container-section2 .form-bg .confirm-form .checkbox-contact-info, .grid-container-section3 .form-bg .confirm-form .checkbox-contact-info {
-    bottom: 30%;
-  }
-}
-@media screen and (min-width: 800px) {
-  .grid-container-section1 .form-bg .confirm-form .checkbox-contact-info, .grid-container-section2 .form-bg .confirm-form .checkbox-contact-info, .grid-container-section3 .form-bg .confirm-form .checkbox-contact-info {
-    bottom: 35%;
-  }
-}
-@media screen and (min-width: 1100px) {
-  .grid-container-section1 .form-bg .confirm-form .checkbox-contact-info, .grid-container-section2 .form-bg .confirm-form .checkbox-contact-info, .grid-container-section3 .form-bg .confirm-form .checkbox-contact-info {
-    bottom: 30%;
-  }
+  margin-top: 0.5rem;
+  margin-left: 1rem;
 }
 .grid-container-section1 .form-bg .confirm-form .confirm-form-submit, .grid-container-section2 .form-bg .confirm-form .confirm-form-submit, .grid-container-section3 .form-bg .confirm-form .confirm-form-submit {
   display: flex;
@@ -540,7 +488,6 @@ header button {
   margin: -0.5rem 0rem 0rem 0rem;
   width: 80%;
   font-weight: bold;
-  padding-left: 1rem;
   font-size: 18px;
   color: #fe5c6f;
 }
@@ -550,9 +497,9 @@ header button {
     font-size: 12px;
   }
 }
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 375px) {
   .page-2-content-container h3 {
-    width: 100%;
+    width: 80%;
   }
 }
 @media (min-width: 599px) and (max-width: 650px) {
@@ -564,7 +511,7 @@ header button {
 @media screen and (min-width: 750px) {
   .page-2-content-container h3 {
     margin-top: 2.5rem;
-    width: 60%;
+    width: 65%;
     font-size: 32px;
     line-height: 1.5em;
   }
@@ -581,7 +528,6 @@ header button {
     font-size: 28px;
     line-height: 32px;
     width: 45%;
-    margin-top: 0rem;
   }
 }
 @media screen and (min-width: 1400px) {
@@ -605,17 +551,9 @@ header button {
     padding: 0;
   }
 }
-@media (min-width: 599px) and (max-width: 650px) {
-  .page-2-content-container p {
-    font-size: 22px;
-    padding-left: 1rem;
-    margin-bottom: 0;
-  }
-}
 @media screen and (max-width: 376px) {
   .page-2-content-container p {
-    padding-left: 1rem;
-    width: 17rem;
+    width: 80%;
   }
 }
 @media screen and (max-width: 290px) {
@@ -756,6 +694,38 @@ header button {
   width: 100%;
   padding: 0;
 }
+.grid-container-section2 .s2-item4 p, .grid-container-section3 .s2-item4 p {
+  line-height: 21.06px;
+  width: 80%;
+}
+@media screen and (max-width: 376px) {
+  .grid-container-section2 .s2-item4 p, .grid-container-section3 .s2-item4 p {
+    margin-top: 0;
+    padding-left: 1rem;
+    width: 85%;
+  }
+}
+@media screen and (min-width: 359px) {
+  .grid-container-section2 .s2-item4 p, .grid-container-section3 .s2-item4 p {
+    line-height: 20.06px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .grid-container-section2 .s2-item4 p, .grid-container-section3 .s2-item4 p {
+    margin-top: -0.5rem;
+    font-size: 14px;
+    line-height: 18px;
+    width: 90%;
+  }
+}
+@media screen and (min-width: 750px) {
+  .grid-container-section2 .s2-item4 p, .grid-container-section3 .s2-item4 p {
+    width: 65%;
+    margin-top: 1rem;
+    line-height: 1.4em;
+    font-size: 24px;
+  }
+}
 .grid-container-section2 h2, .grid-container-section3 h2 {
   font-size: 36px;
   margin-top: -1.2rem;
@@ -784,38 +754,6 @@ header button {
 @media screen and (min-width: 750px) {
   .grid-container-section2 h2, .grid-container-section3 h2 {
     margin-top: -6rem;
-  }
-}
-.grid-container-section2 p, .grid-container-section3 p {
-  line-height: 21.06px;
-  width: 80%;
-}
-@media screen and (max-width: 376px) {
-  .grid-container-section2 p, .grid-container-section3 p {
-    margin-top: 0;
-    padding-left: 1rem;
-    width: 85%;
-  }
-}
-@media screen and (min-width: 359px) {
-  .grid-container-section2 p, .grid-container-section3 p {
-    line-height: 20.06px;
-  }
-}
-@media screen and (max-width: 320px) {
-  .grid-container-section2 p, .grid-container-section3 p {
-    margin-top: -0.5rem;
-    font-size: 14px;
-    line-height: 18px;
-    width: 90%;
-  }
-}
-@media screen and (min-width: 750px) {
-  .grid-container-section2 p, .grid-container-section3 p {
-    width: 65%;
-    margin-top: 1rem;
-    line-height: 1.4em;
-    font-size: 24px;
   }
 }
 .grid-container-section2 button, .grid-container-section3 button {
@@ -874,7 +812,7 @@ header button {
 }
 @media screen and (min-width: 750px) {
   .grid-container-section3 .s3-item1 {
-    background-image: url("second_bg.2fc6d470.svg");
+    background-image: url("bottom_page_bg.4ed98f59.svg");
     background-size: cover;
   }
 }
@@ -895,8 +833,6 @@ header button {
   .grid-container-section3 .s3-item1 h2 {
     font-size: 58px;
     margin-top: 2rem;
-    align-self: flex-start;
-    margin-left: 2rem;
     width: auto;
   }
 }
@@ -912,8 +848,6 @@ header button {
     width: 45%;
     font-size: 24px;
     line-height: 29px;
-    align-self: flex-start;
-    margin-left: 2rem;
   }
 }
 .grid-container-section3 .s3-item2 {
@@ -1071,4 +1005,4 @@ header button {
   color: white;
   border-color: white;
 }
-/*# sourceMappingURL=index.beb02c0a.css.map */
+/*# sourceMappingURL=index.279b3d3e.css.map */
